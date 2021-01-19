@@ -3,7 +3,7 @@ import Search from './Search';
 import Notifications from './Notifications';
 import User from './User';
 
-import logo from "./ant.png";
+import logo from "./logo.jpg";
 
 function Navbar() {
     return (

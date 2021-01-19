@@ -1966,10 +1966,37 @@ __webpack_require__.r(__webpack_exports__);
 var Bars = function Bars() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
     className: "Bars",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Bar // data={{}}
-    // height={200}
-    // width={300}
-    , {})
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Bar, {
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+          label: "# of votes",
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: ["#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a"] // borderColor: [
+          //     "rgba(255, 99, 132, 1)",
+          //     "rgba(54, 162, 235, 1)",
+          //     "rgba(255, 206, 86, 1)",
+          //     "rgba(75, 192, 192, 1)",
+          //     "rgba(153, 102, 255, 1)",
+          //     "rgba(255, 159, 64, 1)",
+          // ],
+          // borderWidth: 1,
+
+        }]
+      },
+      height: 200,
+      width: 300,
+      options: {
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    })
   });
 };
 
@@ -2052,7 +2079,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search */ "./resources/js/components/Search.js");
 /* harmony import */ var _Notifications__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Notifications */ "./resources/js/components/Notifications.js");
 /* harmony import */ var _User__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./User */ "./resources/js/components/User.js");
-/* harmony import */ var _ant_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ant.png */ "./resources/js/components/ant.png");
+/* harmony import */ var _logo_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logo.jpg */ "./resources/js/components/logo.jpg");
 
 
 
@@ -2065,7 +2092,7 @@ function Navbar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
     className: "Navbar",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-      src: _ant_png__WEBPACK_IMPORTED_MODULE_5__.default,
+      src: _logo_jpg__WEBPACK_IMPORTED_MODULE_5__.default,
       alt: "LOGO",
       className: "logo"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -2119,21 +2146,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
 
 
 
-var Pie = function Pie() {
+
+var Pies = function Pies() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
     className: "Pie",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("canvas", {
-      id: "pie"
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Pie, {
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+          label: "# of votes",
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: ["#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a", "#4ec54a"] // borderColor: [
+          //     "rgba(255, 99, 132, 1)",
+          //     "rgba(54, 162, 235, 1)",
+          //     "rgba(255, 206, 86, 1)",
+          //     "rgba(75, 192, 192, 1)",
+          //     "rgba(153, 102, 255, 1)",
+          //     "rgba(255, 159, 64, 1)",
+          // ],
+          // borderWidth: 1,
+
+        }]
+      },
+      height: 200,
+      width: 300,
+      options: {
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
     })
   });
 };
 
-{// let myPie = document.getElementById("pie").getContext('2d');
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pie);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pies);
 
 /***/ }),
 
@@ -2203,7 +2258,7 @@ function Sidebar() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
           href: "#",
-          children: "TEAM"
+          children: "TEAM MEMBERS"
         })
       })]
     })
@@ -22866,7 +22921,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\r\n    color: #4ec54a;\r\n}\r\n\r\n.borders {\r\n    border: 1px solid #4ec54a;\r\n}\r\n\r\n.App {\r\n    height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: 1fr 10fr;\r\n    grid-template-rows: 4fr 24fr 1fr;\r\n}\r\n\r\n.Sidebar {\r\n    background-color: #424242;\r\n    border-right: 1px solid #4ec54a;\r\n    grid-column: 1/2;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Navbar {\r\n    background-color: #424242;\r\n    display: flex;\r\n    align-items: baseline;\r\n    /* justify-content: end; */\r\n    grid-column: 1/3;\r\n    grid-row: 1/2;\r\n}\r\n\r\n.logo {\r\n    background-color: #4ec54a;\r\n    padding-left: 23px;\r\n    padding-right: 23px;\r\n    height: 70px;\r\n}\r\n\r\n.navbarRight {\r\n    border-bottom: 1px solid #4ec54a;\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.Search {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.Notifications {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.User {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n\r\n.Main {\r\n    background-color: #424242;\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\r\n    grid-template-rows: 1fr 4fr 1fr;\r\n}\r\n\r\n.Pie {\r\n    background-color: aquamarine;\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Bars {\r\n    background-color: aquamarine;\r\n    grid-column: 4/5;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Footer {\r\n    background-color: black;\r\n    grid-column: 1/3;\r\n    grid-row: 3/4;\r\n    text-align: center;\r\n}\r\n\r\nul {\r\n    list-style: none;\r\n}\r\n\r\na {\r\n    border: 1px solid #4ec54a;\r\n    display: block;\r\n    font-weight: 700;\r\n    padding: 2rem 0rem 2rem 1rem;\r\n    text-decoration: none;\r\n    transition: background-color, color 0.2s;\r\n    width: 100%;\r\n}\r\n\r\na:hover {\r\n    background-color: #4ec54a;\r\n    color: #fff;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\r\n    color: #4ec54a;\r\n}\r\n\r\n.borders {\r\n    border: 1px solid #4ec54a;\r\n}\r\n\r\n.App {\r\n    height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: 1fr 10fr;\r\n    grid-template-rows: 4fr 24fr 1fr;\r\n}\r\n\r\n.Sidebar {\r\n    background-color: #424242;\r\n    border-right: 1px solid #4ec54a;\r\n    grid-column: 1/2;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Navbar {\r\n    background-color: #424242;\r\n    display: flex;\r\n    align-items: baseline;\r\n    /* justify-content: end; */\r\n    grid-column: 1/3;\r\n    grid-row: 1/2;\r\n}\r\n\r\n.logo {\r\n    background-color: #4ec54a;\r\n    padding-left: 23px;\r\n    padding-right: 23px;\r\n    height: 70px;\r\n}\r\n\r\n.navbarRight {\r\n    border-bottom: 1px solid #4ec54a;\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.Search {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.Notifications {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.User {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n\r\n.Main {\r\n    background-color: #424242;\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\r\n    grid-template-rows: 1fr 4fr 1fr;\r\n}\r\n\r\n.Pie {\r\n    /* background-color: aquamarine; */\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Bars {\r\n    /* background-color: aquamarine; */\r\n    grid-column: 4/5;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Footer {\r\n    grid-column: 1/3;\r\n    grid-row: 3/4;\r\n    text-align: center;\r\n}\r\n\r\nul {\r\n    list-style: none;\r\n}\r\n\r\na {\r\n    border: 1px solid #4ec54a;\r\n    display: block;\r\n    font-weight: 700;\r\n    padding: 2rem 0rem 2rem 1rem;\r\n    text-decoration: none;\r\n    transition: background-color, color 0.2s;\r\n    width: 100%;\r\n}\r\n\r\na:hover {\r\n    background-color: #4ec54a;\r\n    color: #fff;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22949,10 +23004,10 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./resources/js/components/ant.png":
-/*!*****************************************!*\
-  !*** ./resources/js/components/ant.png ***!
-  \*****************************************/
+/***/ "./resources/js/components/logo.jpg":
+/*!******************************************!*\
+  !*** ./resources/js/components/logo.jpg ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22960,7 +23015,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ant.png?0c887b4cbcbd00af3eb2554984bd29cc");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.jpg?cc1e5671207fd6b422fdd8acf4b43b51");
 
 /***/ }),
 

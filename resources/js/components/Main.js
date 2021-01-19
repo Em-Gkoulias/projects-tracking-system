@@ -1,11 +1,11 @@
 import React from "react";
-import Pie from './Pie';
+import Pies from './Pie';
 import Bars from './Bars';
 
 function Main() {
     return (
         <div className="Main">
-            <Pie />
+            <Pies />
             <Bars />
         </div>
     );
