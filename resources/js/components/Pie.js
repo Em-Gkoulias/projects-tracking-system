@@ -1,10 +1,10 @@
 import React from "react";
-import {Pie} from "react-chartjs-2";
+import {Doughnut} from "react-chartjs-2";
 
 const Pies = () => {
     return (
         <div className="Pie">
-            <Pie
+            <Doughnut
                 data={{
                     labels: [
                         "Red",

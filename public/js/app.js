@@ -1919,7 +1919,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.js");
 /* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Main */ "./resources/js/components/Main.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index.css */ "./resources/js/components/index.css");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
 
 
 
@@ -1927,6 +1927,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import './index.css';
 
 
 
@@ -2004,6 +2005,43 @@ var Bars = function Bars() {
 
 /***/ }),
 
+/***/ "./resources/js/components/Dropdowns.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Dropdowns.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+
+
+var Dropdowns = function Dropdowns() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
+    className: "Dropdown",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("option", {
+      value: "",
+      children: "1"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("option", {
+      value: "",
+      children: "2"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("option", {
+      value: "",
+      children: "3"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropdowns);
+
+/***/ }),
+
 /***/ "./resources/js/components/Footer.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/Footer.js ***!
@@ -2046,6 +2084,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Pie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Pie */ "./resources/js/components/Pie.js");
 /* harmony import */ var _Bars__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Bars */ "./resources/js/components/Bars.js");
+/* harmony import */ var _Dropdowns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Dropdowns */ "./resources/js/components/Dropdowns.js");
+
 
 
 
@@ -2154,7 +2194,7 @@ __webpack_require__.r(__webpack_exports__);
 var Pies = function Pies() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
     className: "Pie",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Pie, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Doughnut, {
       data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
@@ -2253,7 +2293,7 @@ function Sidebar() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
           href: "#",
-          children: "NOTES"
+          children: "LOG"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -22904,10 +22944,10 @@ return src;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/index.css":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/index.css ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/components/style.scss":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/components/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22921,7 +22961,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\r\n    color: #4ec54a;\r\n}\r\n\r\n.borders {\r\n    border: 1px solid #4ec54a;\r\n}\r\n\r\n.App {\r\n    height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: 1fr 10fr;\r\n    grid-template-rows: 4fr 24fr 1fr;\r\n}\r\n\r\n.Sidebar {\r\n    background-color: #424242;\r\n    border-right: 1px solid #4ec54a;\r\n    grid-column: 1/2;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Navbar {\r\n    background-color: #424242;\r\n    display: flex;\r\n    align-items: baseline;\r\n    /* justify-content: end; */\r\n    grid-column: 1/3;\r\n    grid-row: 1/2;\r\n}\r\n\r\n.logo {\r\n    background-color: #4ec54a;\r\n    padding-left: 23px;\r\n    padding-right: 23px;\r\n    height: 70px;\r\n}\r\n\r\n.navbarRight {\r\n    border-bottom: 1px solid #4ec54a;\r\n    display: flex;\r\n    width: 100%;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.Search {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.Notifications {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n.User {\r\n    padding-left: 2rem;\r\n    padding-right: 2rem;\r\n}\r\n\r\n\r\n.Main {\r\n    background-color: #424242;\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\r\n    grid-template-rows: 1fr 4fr 1fr;\r\n}\r\n\r\n.Pie {\r\n    /* background-color: aquamarine; */\r\n    grid-column: 2/3;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Bars {\r\n    /* background-color: aquamarine; */\r\n    grid-column: 4/5;\r\n    grid-row: 2/3;\r\n}\r\n\r\n.Footer {\r\n    grid-column: 1/3;\r\n    grid-row: 3/4;\r\n    text-align: center;\r\n}\r\n\r\nul {\r\n    list-style: none;\r\n}\r\n\r\na {\r\n    border: 1px solid #4ec54a;\r\n    display: block;\r\n    font-weight: 700;\r\n    padding: 2rem 0rem 2rem 1rem;\r\n    text-decoration: none;\r\n    transition: background-color, color 0.2s;\r\n    width: 100%;\r\n}\r\n\r\na:hover {\r\n    background-color: #4ec54a;\r\n    color: #fff;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #4ec54a;\n}\n\n.borders {\n  border: 1px solid #4ec54a;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #4ec54a;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n\n.Navbar {\n  /* background-color: #424242; */\n  display: flex;\n  align-items: baseline;\n  /* justify-content: end; */\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #4ec54a;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Main {\n  /* background-color: #424242; */\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  background-color: aquamarine;\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.Pie {\n  /* background-color: aquamarine; */\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.Bars {\n  /* background-color: aquamarine; */\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n}\n\nul {\n  list-style: none;\n}\n\na {\n  background-color: #4ec54a;\n  border: 1px solid #fff;\n  border-left: none;\n  color: #fff;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n\na:hover {\n  background-color: #fff;\n  color: #000;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -110816,10 +110856,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./resources/js/components/index.css":
-/*!*******************************************!*\
-  !*** ./resources/js/components/index.css ***!
-  \*******************************************/
+/***/ "./resources/js/components/style.scss":
+/*!********************************************!*\
+  !*** ./resources/js/components/style.scss ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -110829,7 +110869,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./index.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/index.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./style.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/components/style.scss");
 
             
 
@@ -110838,11 +110878,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_index_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_style_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 

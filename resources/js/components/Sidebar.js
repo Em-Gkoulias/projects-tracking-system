@@ -11,7 +11,7 @@ function Sidebar() {
                     <a href="#">PROJECTS</a>
                 </li>
                 <li>
-                    <a href="#">NOTES</a>
+                    <a href="#">LOG</a>
                 </li>
                 <li>
                     <a href="#">TEAM MEMBERS</a>
