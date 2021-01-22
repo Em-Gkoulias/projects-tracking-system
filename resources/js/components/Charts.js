@@ -1,6 +1,6 @@
 import React from "react";
-import DoughnutChart from './DoughnutChart';
-import BarChart from './BarChart';
+import DoughnutChart from './ChartsComponents/DoughnutChart';
+import BarChart from './ChartsComponents/BarChart';
 import Dropdowns from './Dropdowns';
 
 function Charts() {

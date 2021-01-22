@@ -1995,11 +1995,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Sidebar */ "./resources/js/components/Sidebar.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.js");
-/* harmony import */ var _Charts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Charts */ "./resources/js/components/Charts.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
+/* harmony import */ var _Charts__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Charts */ "./resources/js/components/Charts.js");
+/* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Projects */ "./resources/js/components/Projects.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+
 
 
 
@@ -2013,21 +2015,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "App",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Switch, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
-          path: "/projects"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Switch, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+          path: "/projects",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Projects__WEBPACK_IMPORTED_MODULE_7__.default, {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
           path: "/log"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
           path: "/team"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
           path: "/",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Charts__WEBPACK_IMPORTED_MODULE_5__.default, {})
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Charts__WEBPACK_IMPORTED_MODULE_6__.default, {})
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_6__.default, {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_5__.default, {})]
     })
   });
 }
@@ -2040,10 +2043,44 @@ if (document.getElementById('root')) {
 
 /***/ }),
 
-/***/ "./resources/js/components/BarChart.js":
-/*!*********************************************!*\
-  !*** ./resources/js/components/BarChart.js ***!
-  \*********************************************/
+/***/ "./resources/js/components/Charts.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Charts.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _ChartsComponents_DoughnutChart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ChartsComponents/DoughnutChart */ "./resources/js/components/ChartsComponents/DoughnutChart.js");
+/* harmony import */ var _ChartsComponents_BarChart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ChartsComponents/BarChart */ "./resources/js/components/ChartsComponents/BarChart.js");
+/* harmony import */ var _Dropdowns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Dropdowns */ "./resources/js/components/Dropdowns.js");
+
+
+
+
+
+
+
+function Charts() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    className: "Charts",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ChartsComponents_DoughnutChart__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ChartsComponents_BarChart__WEBPACK_IMPORTED_MODULE_3__.default, {})]
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Charts);
+
+/***/ }),
+
+/***/ "./resources/js/components/ChartsComponents/BarChart.js":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/ChartsComponents/BarChart.js ***!
+  \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2099,44 +2136,10 @@ var BarChart = function BarChart() {
 
 /***/ }),
 
-/***/ "./resources/js/components/Charts.js":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Charts.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _DoughnutChart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DoughnutChart */ "./resources/js/components/DoughnutChart.js");
-/* harmony import */ var _BarChart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BarChart */ "./resources/js/components/BarChart.js");
-/* harmony import */ var _Dropdowns__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Dropdowns */ "./resources/js/components/Dropdowns.js");
-
-
-
-
-
-
-
-function Charts() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-    className: "Charts",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_DoughnutChart__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_BarChart__WEBPACK_IMPORTED_MODULE_3__.default, {})]
-  });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Charts);
-
-/***/ }),
-
-/***/ "./resources/js/components/DoughnutChart.js":
-/*!**************************************************!*\
-  !*** ./resources/js/components/DoughnutChart.js ***!
-  \**************************************************/
+/***/ "./resources/js/components/ChartsComponents/DoughnutChart.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/ChartsComponents/DoughnutChart.js ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2323,6 +2326,74 @@ var Notifications = function Notifications() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Notifications);
+
+/***/ }),
+
+/***/ "./resources/js/components/Projects.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Projects.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+
+
+var Projects = function Projects() {
+  var data = [{
+    name: "project1",
+    description: "description for project1",
+    bugs: 1
+  }, {
+    name: "project2",
+    description: "description for project2",
+    bugs: 2
+  }, {
+    name: "project3",
+    description: "description for project3",
+    bugs: 3
+  }];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    className: "Projects",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+      children: data.map(function (item) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+          className: "project",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
+                children: ["Title: ", item.name]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                children: ["Description: ", item.description]
+              })
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "openBtn",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+              children: ["Bugs: ", item.bugs]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+              to: "/",
+              children: "Open"
+            })]
+          })]
+        });
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
 
 /***/ }),
 
@@ -23057,7 +23128,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #4ec54a;\n}\n\n.borders {\n  border: 1px solid #4ec54a;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #4ec54a;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #4ec54a;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  background-color: aquamarine;\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n}\n\nul {\n  list-style: none;\n}\n\na {\n  background-color: #4ec54a;\n  border: 1px solid #fff;\n  border-left: none;\n  color: #fff;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n\na:hover {\n  background-color: #fff;\n  border: 1px solid #4ec54a;\n  color: #000;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #4ec54a;\n}\n\n.borders {\n  border: 1px solid #4ec54a;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #4ec54a;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #4ec54a;\n  border: 1px solid #fff;\n  border-left: none;\n  color: #fff;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #fff;\n  border: 1px solid #4ec54a;\n  color: #000;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #4ec54a;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  background-color: aquamarine;\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  border: 1px solid #4ec54a;\n  margin: 2rem;\n}\n.Projects .project h4 {\n  background-color: #4ec54a;\n  color: #fff;\n}\n.Projects .project .openBtn {\n  background-color: #000;\n  display: flex;\n  font-weight: 700;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.Projects .project .openBtn a {\n  background-color: #4ec54a;\n  color: white;\n  border: 1px solid #4ec54a;\n  padding: 0.25rem;\n  text-decoration: none;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
