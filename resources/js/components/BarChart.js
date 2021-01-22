@@ -1,10 +1,10 @@
-import React from "react";
-import {Doughnut} from "react-chartjs-2";
+import React from 'react';
+import {Bar} from 'react-chartjs-2';
 
-const Pies = () => {
+const BarChart = () => {
     return (
-        <div className="Pie">
-            <Doughnut
+        <div className="BarChart">
+            <Bar
                 data={{
                     labels: [
                         "Red",
@@ -57,4 +57,4 @@ const Pies = () => {
     );
 };
 
-export default Pies;
+export default BarChart;

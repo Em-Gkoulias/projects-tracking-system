@@ -63,8 +63,7 @@
 }
 
 
-.Main {
-    /* background-color: #424242; */
+.Charts {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -78,14 +77,12 @@
     grid-row: 1/2;
 }
 
-.Pie {
-    /* background-color: aquamarine; */
+.PieChart {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.Bars {
-    /* background-color: aquamarine; */
+.BarChart {
     grid-column: 4/5;
     grid-row: 2/3;
 }

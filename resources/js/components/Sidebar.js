@@ -1,20 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function Sidebar() {
     return (
         <div className="Sidebar">
             <ul>
                 <li>
-                    <a href="#">HOME</a>
+                    <Link to="/">HOME</Link>
                 </li>
                 <li>
-                    <a href="#">PROJECTS</a>
+                    <Link to="/projects">PROJECTS</Link>
                 </li>
                 <li>
-                    <a href="#">LOG</a>
+                    <Link to="/log">LOG</Link>
                 </li>
                 <li>
-                    <a href="#">TEAM MEMBERS</a>
+                    <Link to="/team">TEAM MEMBERS</Link>
                 </li>
             </ul>
         </div>
