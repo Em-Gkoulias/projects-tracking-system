@@ -26,10 +26,10 @@ $greenColor: #4ec54a;
     grid-row: 2/3;
 
     a {
-        background-color: $greenColor;
-        border: 1px solid #fff;
+        background-color: #fff;
+        border: 1px solid #000;
         border-left: none;
-        color: #fff;
+        color: #000;
         display: block;
         font-weight: 700;
         padding: 1.5rem 0rem 1.5rem 0.5rem;
@@ -39,9 +39,9 @@ $greenColor: #4ec54a;
     }
 
     a:hover {
-        background-color: #fff;
-        border: 1px solid $greenColor;
-        color: #000;;
+        background-color: rgb(163, 33, 214);
+        // border: 1px solid $greenColor;
+        color: #fff;
     }
 }
 
@@ -60,7 +60,7 @@ $greenColor: #4ec54a;
 }
 
 .navbarRight {
-    border-bottom: 1px solid $greenColor;
+    border-bottom: 1px solid #000;
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -91,7 +91,7 @@ $greenColor: #4ec54a;
 }
 
 .Dropdown {
-    background-color: aquamarine;
+    // background-color: aquamarine;
     grid-column: 3/4;
     grid-row: 1/2;
 }
@@ -119,29 +119,40 @@ ul {
 
 
 .Projects {
+    // .projectsHeader {
+    //     margin: 2rem;
+    // }
+
     .project {
+        background-color: $greenColor;
         border: 1px solid $greenColor;
+        color: #fff;
         margin: 2rem;
 
-        h4 {
-            background-color: $greenColor;
+        p {
             color: #fff;
+            padding: 0.25rem;
         }
 
-        .openBtn {
-            background-color: #000;
-            display: flex;
-            font-weight: 700;
-            justify-content: space-between;
-            align-items: baseline;
+        .projectTitle {
+            background-color: black;
+            padding: 0.25rem 0;
 
             a {
-                background-color: $greenColor;
-                color: white;
-                border: 1px solid $greenColor;
+                font-weight: 700;
                 padding: 0.25rem;
                 text-decoration: none;
             }
+
+            a:hover {
+                color: #fff;
+            }
+        }
+
+        .bugs {
+            background-color: #fff;
+            color: #b91e1e;
+            font-weight: 700;
         }
     }
 }
