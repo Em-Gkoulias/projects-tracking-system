@@ -2595,14 +2595,43 @@ var Project = function Project() {
   } else {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "projectShow",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
-        children: project.title
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
-        children: ["Bugs to be fixed: ", bugs.length]
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "projectHeader",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          className: "headers",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+            children: project.title
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
+            children: ["Bugs to be fixed: ", bugs.length]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "addBug",
+          children: "add new bug"
+        })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+        className: "projectsBugs",
         children: bugs.map(function (bug) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-            children: bug.title
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+            className: "bug",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              className: "bugsProperties",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h4", {
+                  children: bug.title
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: bug.description
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              className: "bugsCrud",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: "remove"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: "edit"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: "status"
+              })]
+            })]
           });
         })
       })]
@@ -23404,7 +23433,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #000;\n}\n\n.borders {\n  border: 1px solid #000;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #000;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #fff;\n  border: 1px solid #000;\n  border-left: none;\n  color: #000;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #a321d6;\n  color: #fff;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #000;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #4ec54a;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  background-color: #000;\n  border: 1px solid #000;\n  color: #fff;\n  margin: 2rem;\n}\n.Projects .project p {\n  color: #fff;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: black;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #fff;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #f3f70b;\n}\n.Projects .project .bugs {\n  background-color: #fff;\n  color: #b91e1e;\n  font-weight: 700;\n}\n\n.projectShow {\n  border: 3px solid #000;\n  margin: 0 1rem 1rem 1rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #000;\n}\n\n.borders {\n  border: 1px solid #000;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #000;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #fff;\n  border: 1px solid #000;\n  border-left: none;\n  color: #000;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #a321d6;\n  color: #fff;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #000;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #4ec54a;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  background-color: #000;\n  border: 1px solid #000;\n  color: #fff;\n  margin: 2rem;\n}\n.Projects .project p {\n  color: #fff;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: black;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #fff;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #f3f70b;\n}\n.Projects .project .bugs {\n  background-color: #fff;\n  color: #b91e1e;\n  font-weight: 700;\n}\n\n.projectShow {\n  border: 3px solid #000;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  border: 1px solid #000;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  background-color: palevioletred;\n  padding: 0.5rem;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: royalblue;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

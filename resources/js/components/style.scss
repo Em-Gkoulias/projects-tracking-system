@@ -163,8 +163,47 @@ ul {
 .projectShow {
     border: 3px solid #000;
     margin: 0 1rem 1rem 1rem;
+    padding: 1.5rem;
+    overflow-y: scroll;
 
-    h1 {
-        
+    .projectHeader {
+        display: flex;
+
+        .headers {
+            width: 75%;
+        }
+
+        .addBug {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+        }
+    }
+
+    .projectsBugs {
+        margin-top: 1.5rem;
+
+        .bug {
+            border: 1px solid #000;
+            display: flex;
+            margin-bottom: 1rem;
+
+            .bugsProperties {
+                background-color: palevioletred;
+                padding: 0.5rem;
+                width: 75%;
+            }
+
+            .bugsCrud {
+                background-color: royalblue;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 25%;
+            }
+        }
     }
 }
