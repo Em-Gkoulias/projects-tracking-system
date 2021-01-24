@@ -10,10 +10,11 @@ import Projects from './Projects';
 import Log from './Log';
 import Team from './Team';
 
+import Project from './ProjectsComponents/Project';
+
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
-// import './index.css';
 import './style.scss';
 
 function App() {
@@ -23,18 +24,11 @@ function App() {
                 <Sidebar />
                 <Navbar />
                 <Switch>
-                    <Route path="/projects">
-                        <Projects />
-                    </Route>
-                    <Route path="/log">
-                        <Log />
-                    </Route>
-                    <Route path="/team">
-                        <Team />
-                    </Route>
-                    <Route path="/">
-                        <Charts />
-                    </Route>
+                    <Route path="/" exact component={Charts} />
+                    <Route path="/projects" exact component={Projects} />
+                    <Route path="/projects/:id" component={Project} />
+                    <Route path="/log" component={Log} />
+                    <Route path="/team" component={Team} />
                 </Switch>
                 <Footer />
             </div>
