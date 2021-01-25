@@ -22,3 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/projects/{id}', [ProjectController::class, 'show']);
+Route::post('/projects/{id}', [ProjectController::class, 'store']);

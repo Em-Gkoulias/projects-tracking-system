@@ -2001,9 +2001,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Log__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Log */ "./resources/js/components/Log.js");
 /* harmony import */ var _Team__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Team */ "./resources/js/components/Team.js");
 /* harmony import */ var _ProjectsComponents_Project__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ProjectsComponents/Project */ "./resources/js/components/ProjectsComponents/Project.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+/* harmony import */ var _CreateBug__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./CreateBug */ "./resources/js/components/CreateBug.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+
 
 
 
@@ -2020,25 +2022,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.BrowserRouter, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.BrowserRouter, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "App",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Switch, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Switch, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
           path: "/",
           exact: true,
           component: _Charts__WEBPACK_IMPORTED_MODULE_6__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
           path: "/projects",
           exact: true,
           component: _Projects__WEBPACK_IMPORTED_MODULE_7__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+          path: "/projects/:id/create",
+          exact: true,
+          component: _CreateBug__WEBPACK_IMPORTED_MODULE_11__.default
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
           path: "/projects/:id",
           component: _ProjectsComponents_Project__WEBPACK_IMPORTED_MODULE_10__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
           path: "/log",
           component: _Log__WEBPACK_IMPORTED_MODULE_8__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
           path: "/team",
           component: _Team__WEBPACK_IMPORTED_MODULE_9__.default
         })]
@@ -2204,6 +2210,65 @@ var DoughnutChart = function DoughnutChart() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DoughnutChart);
+
+/***/ }),
+
+/***/ "./resources/js/components/CreateBug.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/CreateBug.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+
+
+
+
+
+var CreateBug = function CreateBug() {
+  var id = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)()['id']; // console.log(id)
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    className: "CreateBug",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+      className: "createBugHeader",
+      children: "Add new bug to project"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+      method: "POST",
+      action: "/api/projects/".concat(id),
+      className: "addBugForm",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        children: ["Title:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "addInputs",
+          type: "text",
+          name: "title",
+          id: "addBugTitle"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        htmlFor: "",
+        children: ["Description:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("textarea", {
+          className: "addInputs",
+          name: "description",
+          id: "addBugDescription",
+          cols: "30",
+          rows: "3"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        type: "submit",
+        children: "Add"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateBug);
 
 /***/ }),
 
@@ -2490,7 +2555,7 @@ var Projects = function Projects() {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                   className: "projectTitle",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-                    to: 'projects/' + project.id,
+                    to: "projects/".concat(project.id),
                     children: ["Title: ", project.title]
                   })
                 })
@@ -2530,6 +2595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
@@ -2606,7 +2672,10 @@ var Project = function Project() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "addBug",
-          children: "add new bug"
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+            to: "/projects/".concat(project.id, "/create"),
+            children: "add new bug"
+          })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
         className: "projectsBugs",
@@ -2624,11 +2693,14 @@ var Project = function Project() {
               })]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
               className: "bugsCrud",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                 children: "remove"
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                children: "edit"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                  href: "#",
+                  children: "edit"
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                 children: "status"
               })]
             })]
@@ -23433,7 +23505,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #000;\n}\n\n.borders {\n  border: 1px solid #000;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #000;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #fff;\n  border: 1px solid #000;\n  border-left: none;\n  color: #000;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #a321d6;\n  color: #fff;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #000;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #4ec54a;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  background-color: #000;\n  border: 1px solid #000;\n  color: #fff;\n  margin: 2rem;\n}\n.Projects .project p {\n  color: #fff;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: black;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #fff;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #f3f70b;\n}\n.Projects .project .bugs {\n  background-color: #fff;\n  color: #b91e1e;\n  font-weight: 700;\n}\n\n.projectShow {\n  border: 3px solid #000;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  border: 1px solid #000;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  background-color: palevioletred;\n  padding: 0.5rem;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: royalblue;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #000;\n}\n\n.borders {\n  border: 1px solid #000;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #000;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #fff;\n  border: 1px solid #000;\n  border-left: none;\n  color: #000;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #a321d6;\n  color: #fff;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #000;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #4ec54a;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  background-color: #000;\n  border: 1px solid #000;\n  color: #fff;\n  margin: 2rem;\n}\n.Projects .project p {\n  color: #fff;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: black;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #fff;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #f3f70b;\n}\n.Projects .project .bugs {\n  background-color: #fff;\n  color: #b91e1e;\n  font-weight: 700;\n}\n\n.projectShow {\n  border: 3px solid #000;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  border: 1px solid #000;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  background-color: palevioletred;\n  padding: 0.5rem;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: royalblue;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}\n\n.CreateBug {\n  border: 3px solid #000;\n  display: flex;\n  flex-direction: column;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n}\n.CreateBug .createBugHeader {\n  margin-bottom: 2rem;\n}\n.CreateBug .addBugForm {\n  display: flex;\n  flex-direction: column;\n}\n.CreateBug .addBugForm .addInputs {\n  margin-bottom: 2rem;\n  width: 100%;\n}\n.CreateBug .addBugForm button {\n  align-self: flex-end;\n  width: 5rem;\n}\n\nlabel {\n  font-weight: 700;\n}\n\ninput {\n  font-size: 1rem;\n  padding: 0.5rem;\n}\n\ntextarea {\n  font-size: 1rem;\n  padding: 0.5rem;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

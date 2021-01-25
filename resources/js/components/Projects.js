@@ -36,7 +36,7 @@ const Projects = () => {
                                 <ul>
                                     <li>
                                         <div className="projectTitle">
-                                            <Link to={'projects/' + project.id}>
+                                            <Link to={`projects/${project.id}`}>
                                                 Title: {project.title}
                                             </Link>
                                         </div>

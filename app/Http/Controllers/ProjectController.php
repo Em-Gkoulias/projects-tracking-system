@@ -25,4 +25,22 @@ class ProjectController extends Controller
         
         return response()->json($project);
     }
+
+    public function store($id) {
+
+        $data = request()->validate([
+            'title' => ['required'],
+            'description' => ['required']
+        ]);
+
+        // dd((int)$id);
+
+        Bug::create([
+            'project_id' => (int)$id,
+            'title' => $data['title'],
+            'description' => $data['description']
+        ]);
+
+        return redirect("projects/$id");
+    }
 }

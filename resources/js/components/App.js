@@ -11,6 +11,7 @@ import Log from './Log';
 import Team from './Team';
 
 import Project from './ProjectsComponents/Project';
+import CreateBug from './CreateBug';
 
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
@@ -26,6 +27,7 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={Charts} />
                     <Route path="/projects" exact component={Projects} />
+                    <Route path="/projects/:id/create" exact component={CreateBug} />
                     <Route path="/projects/:id" component={Project} />
                     <Route path="/log" component={Log} />
                     <Route path="/team" component={Team} />

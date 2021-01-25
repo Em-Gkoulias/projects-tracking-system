@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Project = () => {
     const [error, setError] = useState(null);
@@ -38,7 +38,11 @@ const Project = () => {
                         <h1>{project.title}</h1>
                         <h3>Bugs to be fixed: {bugs.length}</h3>
                     </div>
-                    <div className="addBug">add new bug</div>
+                    <div className="addBug">
+                        <Link to={`/projects/${project.id}/create`} >
+                            add new bug
+                        </Link>
+                    </div>
                 </div>
 
                 <ul className="projectsBugs">
@@ -52,9 +56,11 @@ const Project = () => {
                                     <div>{bug.description}</div>
                                 </div>
                                 <div className="bugsCrud">
-                                    <div>remove</div>
-                                    <div>edit</div>
-                                    <div>status</div>
+                                    <button>remove</button>
+                                    <div>
+                                        <a href="#">edit</a>
+                                    </div>
+                                    <button>status</button>
                                 </div>
                             </li>
                         );

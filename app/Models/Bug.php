@@ -9,6 +9,12 @@ class Bug extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'project_id',
+        'title',
+        'description'
+    ];
+
     public function project() {
         return $this->belongsTo(Project::class);
     }
