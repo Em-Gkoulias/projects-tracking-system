@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
+import Remove from './Remove';
+
 const Project = () => {
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +41,7 @@ const Project = () => {
                         <h3>Bugs to be fixed: {bugs.length}</h3>
                     </div>
                     <div className="addBug">
-                        <Link to={`/projects/${project.id}/create`} >
+                        <Link to={`/projects/${project.id}/create`}>
                             add new bug
                         </Link>
                     </div>
@@ -47,6 +49,9 @@ const Project = () => {
 
                 <ul className="projectsBugs">
                     {bugs.map((bug) => {
+                        // {
+                        //     console.log(bug);
+                        // }
                         return (
                             <li className="bug">
                                 <div className="bugsProperties">
@@ -56,9 +61,13 @@ const Project = () => {
                                     <div>{bug.description}</div>
                                 </div>
                                 <div className="bugsCrud">
-                                    <button>remove</button>
+                                    <Remove bug={bug} />
                                     <div>
-                                        <a href="#">edit</a>
+                                        <Link
+                                            to={`/projects/${project.id}/${bug.id}/edit`}
+                                        >
+                                            edit
+                                        </Link>
                                     </div>
                                     <button>status</button>
                                 </div>

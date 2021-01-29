@@ -1,9 +1,9 @@
 import React from 'react';
-import Search from './Search';
-import Notifications from './Notifications';
-import User from './User';
+import Search from './NavbarComponents/Search';
+import Notifications from './NavbarComponents/Notifications';
+import User from './NavbarComponents/User';
 
-import logo from "./logo.jpg";
+import logo from "../components/images/logo.jpg";
 
 function Navbar() {
     return (

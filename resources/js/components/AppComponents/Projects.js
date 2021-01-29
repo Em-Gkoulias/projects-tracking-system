@@ -20,6 +20,7 @@ const Projects = () => {
                     setError(error);
                 }
             );
+            
     }, []);
 
     if (error) {

@@ -1,60 +1,77 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {Doughnut} from "react-chartjs-2";
 
 const DoughnutChart = () => {
-    return (
-        <div className="DoughnutChart">
-            <Doughnut
-                data={{
-                    labels: [
-                        "Red",
-                        "Blue",
-                        "Yellow",
-                        "Green",
-                        "Purple",
-                        "Orange",
-                    ],
-                    datasets: [
-                        {
-                            label: "# of votes",
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: [
-                                "#4ec54a",
-                                "#4ec54a",
-                                "#4ec54a",
-                                "#4ec54a",
-                                "#4ec54a",
-                                "#4ec54a",
-                            ],
-                            // borderColor: [
-                            //     "rgba(255, 99, 132, 1)",
-                            //     "rgba(54, 162, 235, 1)",
-                            //     "rgba(255, 206, 86, 1)",
-                            //     "rgba(75, 192, 192, 1)",
-                            //     "rgba(153, 102, 255, 1)",
-                            //     "rgba(255, 159, 64, 1)",
-                            // ],
-                            // borderWidth: 1,
-                        },
-                    ],
-                }}
-                height={200}
-                width={300}
-                options={{
-                    maintainAspectRatio: false,
-                    scales: {
-                        yAxes: [
+
+    const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [projects, setProjects] = useState([]);
+
+    const labels = [];
+    const data = [];
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:8001/api/projects")
+            .then((res) => res.json())
+            .then((result) => {
+                setProjects(result);
+                setIsLoading(false);
+            }),
+            (error) => {
+                setError(error),
+                setIsLoading(false);
+            }
+    }, []);
+
+    if (error) {
+        return <div>Error: {error}</div>
+    } else if (isLoading) {
+        return <div>Loading...</div>
+    } else {
+        return (
+            <div className="DoughnutChart">
+
+                {projects.map((project) => {
+                    labels.push(project["title"]);
+                    data.push(project["bugs"].length);
+                })}
+
+                <Doughnut
+                    data={{
+                        labels: labels,
+                        datasets: [
                             {
-                                ticks: {
-                                    beginAtZero: true,
-                                },
+                                label: "# of votes",
+                                data: data,
+                                backgroundColor: [
+                                    "#ff652f",
+                                    "#ffe400",
+                                    "#4ec54a",
+                                    "#4ec54a",
+                                    "#4ec54a",
+                                    "#4ec54a",
+                                ],
                             },
                         ],
-                    },
-                }}
-            />
-        </div>
-    );
+                    }}
+                    height={200}
+                    width={300}
+                    options={{
+                        maintainAspectRatio: false,
+                        scales: {
+                            yAxes: [
+                                {
+                                    ticks: {
+                                        beginAtZero: true,
+                                    },
+                                },
+                            ],
+                        },
+                    }}
+                />
+            </div>
+        );
+    }
 };
 
 export default DoughnutChart;

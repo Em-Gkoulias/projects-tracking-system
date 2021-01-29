@@ -1,16 +1,18 @@
 $greenColor: #4ec54a;
 $purple:  rgb(163, 33, 214);
+$mainColor: #fff;
+$secondaryColor: #000;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #000;
+    color: $secondaryColor;
 }
 
 .borders {
-    border: 1px solid #000;
+    border: 1px solid $secondaryColor;
 }
 
 .App {
@@ -22,15 +24,15 @@ $purple:  rgb(163, 33, 214);
 
 .Sidebar {
     padding-right: 1rem;
-    border-right: 1px solid #000;
+    border-right: 1px solid $secondaryColor;
     grid-column: 1/2;
     grid-row: 2/3;
 
     a {
-        background-color: #fff;
-        border: 1px solid #000;
+        background-color: $mainColor;
+        border: 1px solid $secondaryColor;
         border-left: none;
-        color: #000;
+        color: $secondaryColor;
         display: block;
         font-weight: 700;
         padding: 1.5rem 0rem 1.5rem 0.5rem;
@@ -42,7 +44,7 @@ $purple:  rgb(163, 33, 214);
     a:hover {
         background-color: $purple;
         // border: 1px solid $greenColor;
-        color: #fff;
+        color: $mainColor;
     }
 }
 
@@ -61,7 +63,7 @@ $purple:  rgb(163, 33, 214);
 }
 
 .navbarRight {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $secondaryColor;
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -108,7 +110,7 @@ $purple:  rgb(163, 33, 214);
 }
 
 .Footer {
-    background-color: #000;
+    background-color: $secondaryColor;
     grid-column: 1/3;
     grid-row: 3/4;
     text-align: center;
@@ -121,27 +123,24 @@ ul {
 
 
 .Projects {
-    // .projectsHeader {
-    //     margin: 2rem;
-    // }
 
     .project {
-        background-color: #000;
-        border: 1px solid #000;
-        color: #fff;
+        background-color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        color: $mainColor;
         margin: 2rem;
 
         p {
-            color: #fff;
+            color: $mainColor;
             padding: 0.25rem;
         }
 
         .projectTitle {
-            background-color: black;
+            background-color: $secondaryColor;
             padding: 0.25rem 0;
 
             a {
-                color: #fff;
+                color: $mainColor;
                 font-weight: 700;
                 padding: 0.25rem;
                 text-decoration: none;
@@ -153,15 +152,15 @@ ul {
         }
 
         .bugs {
-            background-color: #fff;
-            color: #b91e1e;
+            background-color:  #b91e1e;
+            color: $mainColor;
             font-weight: 700;
         }
     }
 }
 
 .projectShow {
-    border: 3px solid #000;
+    border: 3px solid $secondaryColor;
     margin: 0 1rem 1rem 1rem;
     padding: 1.5rem;
     overflow-y: scroll;
@@ -186,7 +185,7 @@ ul {
         margin-top: 1.5rem;
 
         .bug {
-            border: 1px solid #000;
+            border: 1px solid $secondaryColor;
             display: flex;
             margin-bottom: 1rem;
 
@@ -209,7 +208,7 @@ ul {
 }
 
 .CreateBug {
-    border: 3px solid #000;
+    border: 3px solid $secondaryColor;
     display: flex;
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
