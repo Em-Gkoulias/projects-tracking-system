@@ -2114,53 +2114,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
 
 
 
 
 var Log = function Log() {
-  var data = [{
-    name: "project1",
-    description: "description for project1",
-    bugs: 1
-  }, {
-    name: "project2",
-    description: "description for project2",
-    bugs: 2
-  }, {
-    name: "project3",
-    description: "description for project3",
-    bugs: 3
-  }];
+  // const data = [
+  //     { name: "project1", description: "description for project1", bugs: 1 },
+  //     { name: "project2", description: "description for project2", bugs: 2 },
+  //     { name: "project3", description: "description for project3", bugs: 3 },
+  // ];
+  // return (
+  //     <div className="Log">
+  //         <ul>
+  //             {data.map((item) => {
+  //                 return (
+  //                     <li className="project">
+  //                         <ul>
+  //                             <li>
+  //                                 <h4>Title: {item.name}</h4>
+  //                             </li>
+  //                             <li>
+  //                                 <p>Description: {item.description}</p>
+  //                             </li>
+  //                         </ul>
+  //                         <div className="openBtn">
+  //                             <p>Bugs: {item.bugs}</p>
+  //                             <Link to="/">Open</Link>
+  //                         </div>
+  //                     </li>
+  //                 );
+  //             })}
+  //         </ul>
+  //     </div>
+  // );
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-    className: "Log",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
-      children: data.map(function (item) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-          className: "project",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
-                children: ["Title: ", item.name]
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                children: ["Description: ", item.description]
-              })
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "openBtn",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-              children: ["Bugs: ", item.bugs]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-              to: "/",
-              children: "Open"
-            })]
-          })]
-        });
-      })
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+      children: "This page is under construction..."
     })
   });
 };
@@ -2239,9 +2229,11 @@ var Projects = function Projects() {
       children: "Loading..."
     });
   } else {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "Projects",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+        children: "Click on a projects title to enter the project"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
         children: projects.map(function (project) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
             className: "project",
@@ -2267,7 +2259,7 @@ var Projects = function Projects() {
             })
           });
         })
-      })
+      })]
     });
   }
 };
@@ -2293,40 +2285,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var Team = function Team() {
-  var data = [{
-    name: "project1",
-    description: "description for project1",
-    bugs: 1
-  }, {
-    name: "project2",
-    description: "description for project2",
-    bugs: 2
-  }, {
-    name: "project3",
-    description: "description for project3",
-    bugs: 3
-  }];
+  // const data = [
+  //     { name: "project1", description: "description for project1", bugs: 1 },
+  //     { name: "project2", description: "description for project2", bugs: 2 },
+  //     { name: "project3", description: "description for project3", bugs: 3 },
+  // ];
+  // return (
+  //     <div className="Team">
+  //         <ul>
+  //             {data.map((item) => {
+  //                 return (
+  //                     <li className="team-member">
+  //                         <ul>
+  //                             <li>
+  //                                 <h4>Title: {item.name}</h4>
+  //                             </li>
+  //                             <li>
+  //                                 <p>Description: {item.description}</p>
+  //                             </li>
+  //                         </ul>
+  //                     </li>
+  //                 );
+  //             })}
+  //         </ul>
+  //     </div>
+  // );
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-    className: "Team",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
-      children: data.map(function (item) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-          className: "team-member",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h4", {
-                children: ["Title: ", item.name]
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                children: ["Description: ", item.description]
-              })
-            })]
-          })
-        });
-      })
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+      children: "This page is under construction..."
     })
   });
 };
@@ -2579,7 +2566,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _NavbarComponents_Search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavbarComponents/Search */ "./resources/js/components/NavbarComponents/Search.js");
 /* harmony import */ var _NavbarComponents_Notifications__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavbarComponents/Notifications */ "./resources/js/components/NavbarComponents/Notifications.js");
 /* harmony import */ var _NavbarComponents_User__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavbarComponents/User */ "./resources/js/components/NavbarComponents/User.js");
-/* harmony import */ var _components_images_logo_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/images/logo.jpg */ "./resources/js/components/images/logo.jpg");
+/* harmony import */ var _components_images_logo_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/images/logo.png */ "./resources/js/components/images/logo.png");
 
 
 
@@ -2592,7 +2579,7 @@ function Navbar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
     className: "Navbar",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-      src: _components_images_logo_jpg__WEBPACK_IMPORTED_MODULE_5__.default,
+      src: _components_images_logo_png__WEBPACK_IMPORTED_MODULE_5__.default,
       alt: "LOGO",
       className: "logo"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -3049,23 +3036,18 @@ var Project = function Project() {
           className: "addBug",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
             to: "/projects/".concat(project.id, "/create"),
-            children: "add new bug"
+            children: "Add Bug"
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
         className: "projectsBugs",
         children: bugs.map(function (bug) {
-          // {
-          //     console.log(bug);
-          // }
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
             className: "bug",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
               className: "bugsProperties",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h4", {
-                  children: bug.title
-                })
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h4", {
+                children: bug.title
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                 children: bug.description
               })]
@@ -3150,15 +3132,7 @@ var Remove = function Remove(props) {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
-      } // body: JSON.stringify({
-      //     id: id,
-      //     project_id: project_id,
-      //     title: title,
-      //     description: description,
-      //     created_at: created_at,
-      //     updated_at: updated_at,
-      // }),
-
+      }
     }).then(function (res) {
       return res.json();
     }).then(function (response) {
@@ -3176,9 +3150,11 @@ var Remove = function Remove(props) {
         children: "Are you sure?"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+          className: "confirmButtons",
           onClick: handleRemove,
           children: "yes"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+          className: "confirmButtons",
           onClick: handleClick,
           children: "no"
         })]
@@ -23868,7 +23844,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #000;\n}\n\n.borders {\n  border: 1px solid #000;\n}\n\n.App {\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #000;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #fff;\n  border: 1px solid #000;\n  border-left: none;\n  color: #000;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #a321d6;\n  color: #fff;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #4ec54a;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #000;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #000;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #4ec54a;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects .project {\n  background-color: #000;\n  border: 1px solid #000;\n  color: #fff;\n  margin: 2rem;\n}\n.Projects .project p {\n  color: #fff;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: #000;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #fff;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #f3f70b;\n}\n.Projects .project .bugs {\n  background-color: #b91e1e;\n  color: #fff;\n  font-weight: 700;\n}\n\n.projectShow {\n  border: 3px solid #000;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  border: 1px solid #000;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  background-color: palevioletred;\n  padding: 0.5rem;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: royalblue;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}\n\n.CreateBug {\n  border: 3px solid #000;\n  display: flex;\n  flex-direction: column;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n}\n.CreateBug .createBugHeader {\n  margin-bottom: 2rem;\n}\n.CreateBug .addBugForm {\n  display: flex;\n  flex-direction: column;\n}\n.CreateBug .addBugForm .addInputs {\n  margin-bottom: 2rem;\n  width: 100%;\n}\n.CreateBug .addBugForm button {\n  align-self: flex-end;\n  width: 5rem;\n}\n\nlabel {\n  font-weight: 700;\n}\n\ninput {\n  font-size: 1rem;\n  padding: 0.5rem;\n}\n\ntextarea {\n  font-size: 1rem;\n  padding: 0.5rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  color: #EEFBFB;\n}\n\n.borders {\n  border: 1px solid #EEFBFB;\n}\n\n.App {\n  background-color: #12232E;\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #EEFBFB;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #12232E;\n  border: 1px solid #EEFBFB;\n  border-left: none;\n  color: #EEFBFB;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color 0.2s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #007CC7;\n  color: #EEFBFB;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  background-color: #12232E;\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #EEFBFB;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #EEFBFB;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #12232E;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects h1 {\n  margin: 1rem 2rem;\n}\n.Projects .project {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  margin: 2rem;\n  transition: all 0.2s;\n}\n.Projects .project p {\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: #007CC7;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  color: #EEFBFB;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle a:hover {\n  color: #EEFBFB;\n}\n.Projects .project .projectTitle:hover {\n  background-color: #12232E;\n}\n.Projects .project .bugs {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 700;\n}\n.Projects .project:hover {\n  transform: translateX(1%) translateY(1%);\n  box-shadow: none;\n}\n\n.projectShow {\n  border: 3px solid #EEFBFB;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectHeader .addBug a {\n  border: 5px solid #007CC7;\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  font-weight: 700;\n  padding: 15px 25px;\n  text-decoration: none;\n  transition: all 0.2s;\n}\n.projectShow .projectHeader .addBug a:hover {\n  box-shadow: none;\n  background-color: #007CC7;\n  color: #EEFBFB;\n  font-weight: 700;\n  transform: translateX(10%) translateY(10%);\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  border: 5px solid #007CC7;\n  color: #12232E;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsProperties h4 {\n  background-color: #007CC7;\n  color: #EEFBFB;\n  padding: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties div {\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: #4DA8DA;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs .bug .bugsCrud button {\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  background-color: #EEFBFB;\n  padding: 0.5rem 1rem;\n  border: none;\n  color: #12232E;\n  transition: all ease-in-out 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud p {\n  color: #12232E;\n  font-weight: 600;\n  text-align: center;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtons {\n  margin: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud button:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n.projectShow .projectsBugs .bug .bugsCrud a {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  text-decoration: none;\n  transition: all ease-in-out 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud a:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n\n.CreateBug {\n  border: 3px solid #EEFBFB;\n  display: flex;\n  flex-direction: column;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n}\n.CreateBug .createBugHeader {\n  margin-bottom: 2rem;\n}\n.CreateBug .addBugForm {\n  display: flex;\n  flex-direction: column;\n}\n.CreateBug .addBugForm .addInputs {\n  margin-bottom: 2rem;\n  width: 100%;\n}\n.CreateBug .addBugForm button {\n  align-self: flex-end;\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 5px 5px #007CC7;\n  color: #007CC7;\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  margin-right: 1rem;\n  padding: 0.5rem 1rem;\n  transition: all ease-in-out 0.2s;\n}\n.CreateBug .addBugForm button:hover {\n  box-shadow: none;\n  transform: translateX(10%) translateY(10%);\n}\n\nlabel {\n  font-weight: 700;\n}\n\ninput {\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  padding: 0.5rem;\n  transition: all ease-in-out 0.2s;\n}\n\ninput:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}\n\ntextarea {\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  padding: 0.5rem;\n  transition: all ease-in-out 0.2s;\n}\n\ntextarea:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23951,9 +23927,9 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./resources/js/components/images/logo.jpg":
+/***/ "./resources/js/components/images/logo.png":
 /*!*************************************************!*\
-  !*** ./resources/js/components/images/logo.jpg ***!
+  !*** ./resources/js/components/images/logo.png ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -23962,7 +23938,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.jpg?cc1e5671207fd6b422fdd8acf4b43b51");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo.png?a78742b0c1cab58b6b6ab68330c776fd");
 
 /***/ }),
 

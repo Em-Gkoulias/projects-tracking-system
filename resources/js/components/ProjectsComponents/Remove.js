@@ -21,15 +21,7 @@ const Remove = (props) => {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
-            },
-            // body: JSON.stringify({
-            //     id: id,
-            //     project_id: project_id,
-            //     title: title,
-            //     description: description,
-            //     created_at: created_at,
-            //     updated_at: updated_at,
-            // }),
+            }
         })
             .then((res) => res.json())
             .then((response) => console.log(response));
@@ -45,8 +37,9 @@ const Remove = (props) => {
                 <div>
                     <p>Are you sure?</p>
                     <div>
-                        <button onClick={handleRemove}>yes</button>
-                        <button onClick={handleClick}>no</button>
+                        <button className="confirmButtons" onClick={handleRemove}>yes</button>
+
+                        <button className="confirmButtons" onClick={handleClick}>no</button>
                     </div>
                 </div>
             )}

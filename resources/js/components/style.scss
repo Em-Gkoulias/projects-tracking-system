@@ -1,21 +1,24 @@
-$greenColor: #4ec54a;
-$purple:  rgb(163, 33, 214);
-$mainColor: #fff;
-$secondaryColor: #000;
+$darkBlue: #12232E;
+$lighterBlue:  #007CC7;
+$lightestBlue: #4DA8DA;
+$shadowOfDark: #203647;
+$shadowOfLight:  #EEFBFB;
+$deepRed: #b91e1e;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: $secondaryColor;
+    color: $shadowOfLight;
 }
 
 .borders {
-    border: 1px solid $secondaryColor;
+    border: 1px solid $shadowOfLight;
 }
 
 .App {
+    background-color: $darkBlue;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -24,15 +27,15 @@ $secondaryColor: #000;
 
 .Sidebar {
     padding-right: 1rem;
-    border-right: 1px solid $secondaryColor;
+    border-right: 1px solid $shadowOfLight;
     grid-column: 1/2;
     grid-row: 2/3;
 
     a {
-        background-color: $mainColor;
-        border: 1px solid $secondaryColor;
+        background-color: $darkBlue;
+        border: 1px solid $shadowOfLight;
         border-left: none;
-        color: $secondaryColor;
+        color: $shadowOfLight;
         display: block;
         font-weight: 700;
         padding: 1.5rem 0rem 1.5rem 0.5rem;
@@ -42,9 +45,9 @@ $secondaryColor: #000;
     }
 
     a:hover {
-        background-color: $purple;
-        // border: 1px solid $greenColor;
-        color: $mainColor;
+        background-color: $lighterBlue;
+        // border:none;
+        color: $shadowOfLight;
     }
 }
 
@@ -56,14 +59,14 @@ $secondaryColor: #000;
 }
 
 .logo {
-    background-color: $greenColor;
+    background-color: $darkBlue;
     padding-left: 23px;
     padding-right: 23px;
     height: 70px;
 }
 
 .navbarRight {
-    border-bottom: 1px solid $secondaryColor;
+    border-bottom: 1px solid $shadowOfLight;
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -110,11 +113,11 @@ $secondaryColor: #000;
 }
 
 .Footer {
-    background-color: $secondaryColor;
+    background-color: $shadowOfLight;
     grid-column: 1/3;
     grid-row: 3/4;
     text-align: center;
-    color: $greenColor;
+    color: $darkBlue;
 }
 
 ul {
@@ -124,43 +127,59 @@ ul {
 
 .Projects {
 
+    h1 {
+        margin: 1rem 2rem;
+    }
+
     .project {
-        background-color: $secondaryColor;
-        border: 1px solid $secondaryColor;
-        color: $mainColor;
+        background-color: $shadowOfLight;
+        border: 5px solid $lighterBlue;
+        box-shadow: 10px 10px $lighterBlue;
+        color: $lighterBlue;
         margin: 2rem;
+        transition: all 0.2s;
 
         p {
-            color: $mainColor;
+            color: $darkBlue;
+            font-weight: 600;
             padding: 0.25rem;
         }
 
         .projectTitle {
-            background-color: $secondaryColor;
+            background-color: $lighterBlue;
             padding: 0.25rem 0;
 
             a {
-                color: $mainColor;
+                color: $shadowOfLight;
                 font-weight: 700;
                 padding: 0.25rem;
                 text-decoration: none;
             }
 
             a:hover {
-                color: rgb(243, 247, 11);
+                color: $shadowOfLight;
             }
         }
 
+        .projectTitle:hover {
+            background-color: $darkBlue;
+        }
+
         .bugs {
-            background-color:  #b91e1e;
-            color: $mainColor;
+            background-color: $shadowOfLight;
+            color: $darkBlue;
             font-weight: 700;
         }
+    }
+
+    .project:hover {
+        transform: translateX(1%) translateY(1%);
+        box-shadow: none;
     }
 }
 
 .projectShow {
-    border: 3px solid $secondaryColor;
+    border: 3px solid $shadowOfLight;
     margin: 0 1rem 1rem 1rem;
     padding: 1.5rem;
     overflow-y: scroll;
@@ -173,11 +192,29 @@ ul {
         }
 
         .addBug {
-            background-color: red;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 25%;
+
+            a {
+                border: 5px solid $lighterBlue;
+                background-color: $shadowOfLight;
+                box-shadow: 10px 10px $lighterBlue;
+                color: $lighterBlue;
+                font-weight: 700;
+                padding: 15px 25px;
+                text-decoration: none;
+                transition: all 0.2s;
+            }
+
+            a:hover {
+                box-shadow: none;
+                background-color: $lighterBlue;
+                color: $shadowOfLight;
+                font-weight: 700;
+                transform: translateX(10%) translateY(10%);
+            }
         }
     }
 
@@ -185,30 +222,86 @@ ul {
         margin-top: 1.5rem;
 
         .bug {
-            border: 1px solid $secondaryColor;
+            background-color: $shadowOfLight;
+            box-shadow: 10px 10px $lighterBlue;
+            color: $darkBlue;
             display: flex;
             margin-bottom: 1rem;
 
             .bugsProperties {
-                background-color: palevioletred;
-                padding: 0.5rem;
+                border: 5px solid $lighterBlue;
+                // background-color: $lighterBlue;
+                color: $darkBlue;
+                // padding: 0.5rem;
                 width: 75%;
+
+                h4 {
+                    background-color: $lighterBlue;
+                    color:$shadowOfLight;
+                    padding: 0.5rem;
+                }
+
+                div {
+                    color: $darkBlue;
+                    font-weight: 600;
+                    padding: 0.5rem;
+                }
             }
 
             .bugsCrud {
-                background-color: royalblue;
+                background-color: $lightestBlue;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
                 width: 25%;
+
+                button {
+                    font-family: inherit;
+                    font-size: 100%;
+                    font-weight: 600;
+                    background-color: $shadowOfLight;
+                    padding: 0.5rem 1rem;
+                    border: none;
+                    color: $darkBlue;
+                    transition: all ease-in-out 0.1s;
+                }
+
+                p {
+                    color: $darkBlue;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                .confirmButtons {
+                    margin: 0.5rem;
+                }
+
+                button:hover {
+                    border: 3px solid $darkBlue;
+                    transform: scale(0.95);
+                }
+
+                a {
+                    background-color: $shadowOfLight;
+                    color: $darkBlue;
+                    font-weight: 600;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                    transition: all ease-in-out 0.1s;
+                }
+
+                a:hover {
+                    border: 3px solid $darkBlue;
+                    transform: scale(0.95);
+                }
             }
         }
     }
 }
 
 .CreateBug {
-    border: 3px solid $secondaryColor;
+    border: 3px solid $shadowOfLight;
     display: flex;
     flex-direction: column;
     margin: 0 1rem 1rem 1rem;
@@ -229,7 +322,21 @@ ul {
 
         button {
             align-self: flex-end;
-            width: 5rem;
+            background-color: $shadowOfLight;
+            border: 5px solid $lighterBlue;
+            box-shadow: 5px 5px $lighterBlue;
+            color: $lighterBlue;
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: 600;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            transition: all ease-in-out 0.2s;
+        }
+
+        button:hover {
+            box-shadow: none;
+            transform: translateX(10%) translateY(10%);
         }
     }
 }
@@ -239,11 +346,29 @@ label {
 }
 
 input {
+    border: 5px solid $lighterBlue;
+    box-shadow: 10px 10px $lighterBlue;
+    color: $darkBlue;
     font-size: 1rem;
     padding: 0.5rem;
+    transition: all ease-in-out 0.2s;
+}
+
+input:focus {
+    box-shadow: none;
+    transform: translateX(1%) translateY(1%);
 }
 
 textarea {
+    border: 5px solid $lighterBlue;
+    box-shadow: 10px 10px $lighterBlue;
+    color: $darkBlue;
     font-size: 1rem;
     padding: 0.5rem;
+    transition: all ease-in-out 0.2s;
+}
+
+textarea:focus {
+    box-shadow: none;
+    transform: translateX(1%) translateY(1%);
 }

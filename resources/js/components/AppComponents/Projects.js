@@ -30,6 +30,7 @@ const Projects = () => {
     } else {
         return (
             <div className="Projects">
+                <h1>Click on a projects title to enter the project</h1>
                 <ul>
                     {projects.map((project) => {
                         return (

@@ -3,7 +3,7 @@ import Search from './NavbarComponents/Search';
 import Notifications from './NavbarComponents/Notifications';
 import User from './NavbarComponents/User';
 
-import logo from "../components/images/logo.jpg";
+import logo from "../components/images/logo.png";
 
 function Navbar() {
     return (

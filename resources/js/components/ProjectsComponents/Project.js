@@ -42,22 +42,17 @@ const Project = () => {
                     </div>
                     <div className="addBug">
                         <Link to={`/projects/${project.id}/create`}>
-                            add new bug
+                            Add Bug
                         </Link>
                     </div>
                 </div>
 
                 <ul className="projectsBugs">
                     {bugs.map((bug) => {
-                        // {
-                        //     console.log(bug);
-                        // }
                         return (
                             <li className="bug">
                                 <div className="bugsProperties">
-                                    <div>
-                                        <h4>{bug.title}</h4>
-                                    </div>
+                                    <h4>{bug.title}</h4>
                                     <div>{bug.description}</div>
                                 </div>
                                 <div className="bugsCrud">
