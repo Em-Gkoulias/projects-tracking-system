@@ -1,10 +1,10 @@
-// import { method } from "lodash";
 import React, { useState } from "react";
-// import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 const Remove = (props) => {
+    const history = useHistory();
+
     const { id, project_id, title, description, created_at, updated_at } = props["bug"];
-    // console.log(id);
 
     const [showRemove, setShowRemove] = useState(true);
 
@@ -24,7 +24,11 @@ const Remove = (props) => {
             }
         })
             .then((res) => res.json())
-            .then((response) => console.log(response));
+            .then((response) => {
+                console.log(response);
+                history.push('/');
+                history.replace(`/projects/${project_id}`);
+            });
     };
 
     return (

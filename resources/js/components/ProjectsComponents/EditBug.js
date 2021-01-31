@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const EditBug = () => {
-    let bugId = useParams()["bugId"];
+    let history = useHistory();
+
+    const bugId = useParams()["bugId"];
+    const id = useParams()["id"];
 
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -11,6 +14,7 @@ const EditBug = () => {
     const [description, setDescription] = useState("");
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
         fetch(`http://127.0.0.1:8001/api/bugs/${bugId}`, {
             method: 'PUT',
@@ -30,6 +34,7 @@ const EditBug = () => {
             .then((result) => {
                 setBug(result);
                 setIsLoading(false);
+                history.push(`/projects/${id}`);
             }),
             (error) => {
                 setError(error);

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const CreateBug = () => {
+    let history = useHistory();
+
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
@@ -23,6 +25,7 @@ const CreateBug = () => {
             .then((res) => console.log(res))
             .then((result) => {
                 console.log(result);
+                history.push(`/projects/${id}`); 
             })
     }
 
