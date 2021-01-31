@@ -9,11 +9,11 @@ function Navbar() {
     return (
         <div className="Navbar">
             <img src={logo} alt="LOGO" className="logo" />
-            <div className="navbarRight">
+            {/* <div className="navbarRight">
                 <Search />
                 <Notifications />
                 <User />
-            </div>
+            </div> */}
         </div>
     );
 }

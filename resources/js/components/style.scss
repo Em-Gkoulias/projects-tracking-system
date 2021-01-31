@@ -1,11 +1,11 @@
 $darkBlue: #12232E;
 $lighterBlue:  #007CC7;
 $lightestBlue: #4DA8DA;
-$shadowOfDark: #203647;
 $shadowOfLight:  #EEFBFB;
 $deepRed: #b91e1e;
 
 * {
+    background-color: $darkBlue;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,13 +40,12 @@ $deepRed: #b91e1e;
         font-weight: 700;
         padding: 1.5rem 0rem 1.5rem 0.5rem;
         text-decoration: none;
-        transition: background-color, color 0.2s;
+        transition: background-color, color, 0.1s;
         width: 100%;
     }
 
     a:hover {
         background-color: $lighterBlue;
-        // border:none;
         color: $shadowOfLight;
     }
 }
@@ -59,7 +58,6 @@ $deepRed: #b91e1e;
 }
 
 .logo {
-    background-color: $darkBlue;
     padding-left: 23px;
     padding-right: 23px;
     height: 70px;
@@ -137,9 +135,10 @@ ul {
         box-shadow: 10px 10px $lighterBlue;
         color: $lighterBlue;
         margin: 2rem;
-        transition: all 0.2s;
+        transition: box-shadow, transform, 0.2s;
 
         p {
+            background-color: $shadowOfLight;
             color: $darkBlue;
             font-weight: 600;
             padding: 0.25rem;
@@ -150,19 +149,21 @@ ul {
             padding: 0.25rem 0;
 
             a {
+                background-color: $lighterBlue;
                 color: $shadowOfLight;
                 font-weight: 700;
                 padding: 0.25rem;
                 text-decoration: none;
             }
-
-            a:hover {
-                color: $shadowOfLight;
-            }
         }
 
         .projectTitle:hover {
             background-color: $darkBlue;
+
+            a {
+                background-color: $darkBlue;
+                color: $shadowOfLight;
+            }
         }
 
         .bugs {
@@ -205,14 +206,13 @@ ul {
                 font-weight: 700;
                 padding: 15px 25px;
                 text-decoration: none;
-                transition: all 0.2s;
+                transition: box-shadow, background-color, color, transform, 0.2s;
             }
 
             a:hover {
                 box-shadow: none;
                 background-color: $lighterBlue;
                 color: $shadowOfLight;
-                font-weight: 700;
                 transform: translateX(10%) translateY(10%);
             }
         }
@@ -230,9 +230,7 @@ ul {
 
             .bugsProperties {
                 border: 5px solid $lighterBlue;
-                // background-color: $lighterBlue;
                 color: $darkBlue;
-                // padding: 0.5rem;
                 width: 75%;
 
                 h4 {
@@ -242,6 +240,7 @@ ul {
                 }
 
                 div {
+                    background-color: $shadowOfLight;
                     color: $darkBlue;
                     font-weight: 600;
                     padding: 0.5rem;
@@ -264,7 +263,7 @@ ul {
                     padding: 0.5rem 1rem;
                     border: none;
                     color: $darkBlue;
-                    transition: all ease-in-out 0.1s;
+                    transition: border, transform, 0.1s;
                 }
 
                 p {
@@ -273,8 +272,20 @@ ul {
                     text-align: center;
                 }
 
-                .confirmButtons {
-                    margin: 0.5rem;
+                .confirmButtonsBg {
+                    background-color: $lightestBlue;
+
+                    p {
+                        background-color: $lightestBlue;
+                    }
+
+                    .confirmButtons {
+                        margin: 0.5rem;
+                    }
+
+                    .yesBtn {
+                        background-color: #b91e1e;
+                    }
                 }
 
                 button:hover {
@@ -288,7 +299,7 @@ ul {
                     font-weight: 600;
                     padding: 0.5rem 1rem;
                     text-decoration: none;
-                    transition: all ease-in-out 0.1s;
+                    transition: border, transform, 0.1s;
                 }
 
                 a:hover {
@@ -331,7 +342,7 @@ ul {
             font-weight: 600;
             margin-right: 1rem;
             padding: 0.5rem 1rem;
-            transition: all ease-in-out 0.2s;
+            transition: box-shadow, transorm, 0.2s;
         }
 
         button:hover {
@@ -346,12 +357,14 @@ label {
 }
 
 input {
+    background-color: $shadowOfLight;
     border: 5px solid $lighterBlue;
     box-shadow: 10px 10px $lighterBlue;
     color: $darkBlue;
     font-size: 1rem;
+    font-weight: 600;
     padding: 0.5rem;
-    transition: all ease-in-out 0.2s;
+    transition: box-shadow, transorm, 0.2s;
 }
 
 input:focus {
@@ -360,15 +373,117 @@ input:focus {
 }
 
 textarea {
+    background-color: $shadowOfLight;
     border: 5px solid $lighterBlue;
     box-shadow: 10px 10px $lighterBlue;
     color: $darkBlue;
     font-size: 1rem;
+    font-weight: 600;
     padding: 0.5rem;
-    transition: all ease-in-out 0.2s;
+    transition: box-shadow, transorm, 0.2s;
 }
 
 textarea:focus {
     box-shadow: none;
     transform: translateX(1%) translateY(1%);
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        .Sidebar {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Charts {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .Footer {
+        background-color: red;
+    }
+
+    .bug {
+        // box-shadow: 10px 10px $lighterBlue;
+        // color: $darkBlue;
+        // display: flex;
+        // margin-bottom: 1rem;
+        flex-direction: column;
+
+        .bugsProperties {
+            width: 100% !important;
+        }
+
+        .bugsCrud {
+            background-color: $lighterBlue !important;
+            // display: flex;
+            // flex-direction: column !important;
+            justify-content: space-around;
+            align-items: center;
+            width: 100% !important;
+
+            button {
+                font-family: inherit;
+                font-size: 100%;
+                font-weight: 600;
+                background-color: $shadowOfLight;
+                padding: 0.5rem 1rem;
+                border: none;
+                color: $darkBlue;
+                transition: border, transform, 0.1s;
+            }
+
+            p {
+                color: $darkBlue;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            .confirmButtonsBg {
+                background-color: $lightestBlue;
+
+                p {
+                    background-color: $lightestBlue;
+                }
+
+                .confirmButtons {
+                    margin: 0.5rem;
+                }
+
+                .yesBtn {
+                    background-color: #b91e1e;
+                }
+            }
+
+            button:hover {
+                border: 3px solid $darkBlue;
+                transform: scale(0.95);
+            }
+
+            a {
+                background-color: $shadowOfLight;
+                color: $darkBlue;
+                font-weight: 600;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                transition: border, transform, 0.1s;
+            }
+
+            a:hover {
+                border: 3px solid $darkBlue;
+                transform: scale(0.95);
+            }
+        }
+    }
 }

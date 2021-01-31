@@ -35,11 +35,22 @@ const Remove = (props) => {
                 </button>
             ) : (
                 <div>
-                    <p>Are you sure?</p>
-                    <div>
-                        <button className="confirmButtons" onClick={handleRemove}>yes</button>
+                    <div className="confirmButtonsBg">
+                        <p>Are you sure?</p>
 
-                        <button className="confirmButtons" onClick={handleClick}>no</button>
+                        <button
+                            className="confirmButtons yesBtn"
+                            onClick={handleRemove}
+                        >
+                            yes
+                        </button>
+
+                        <button
+                            className="confirmButtons"
+                            onClick={handleClick}
+                        >
+                            no
+                        </button>
                     </div>
                 </div>
             )}

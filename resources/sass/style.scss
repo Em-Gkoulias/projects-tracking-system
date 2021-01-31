@@ -1,0 +1,32 @@
+$darkBlue: #12232E;
+$lighterBlue:  #007CC7;
+$lightestBlue: #4DA8DA;
+$shadowOfLight:  #EEFBFB;
+
+* {
+    // background-color: $darkBlue;
+    color: $shadowOfLight;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// i ll start by coding the mobile design first
+.App {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    .App {
+        background-color: $darkBlue;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 4fr 24fr 1fr;
+    }
+}
