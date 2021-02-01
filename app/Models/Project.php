@@ -14,4 +14,13 @@ class Project extends Model
     public function bugs() {
         return $this->hasMany(Bug::class);
     }
+
+    public static function boot() {
+        parent::boot();
+        self::deleting(function($project) {
+            $project->bugs()->each(function($bug) {
+                $bug->delete();
+            });
+        });
+    }
 }
