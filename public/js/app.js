@@ -2001,11 +2001,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AppComponents_Log__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AppComponents/Log */ "./resources/js/components/AppComponents/Log.js");
 /* harmony import */ var _AppComponents_Team__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AppComponents/Team */ "./resources/js/components/AppComponents/Team.js");
 /* harmony import */ var _ProjectsComponents_Project__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ProjectsComponents/Project */ "./resources/js/components/ProjectsComponents/Project.js");
-/* harmony import */ var _ProjectsComponents_CreateBug__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ProjectsComponents/CreateBug */ "./resources/js/components/ProjectsComponents/CreateBug.js");
-/* harmony import */ var _ProjectsComponents_EditBug__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ProjectsComponents/EditBug */ "./resources/js/components/ProjectsComponents/EditBug.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+/* harmony import */ var _ProjectsComponents_CreateProject__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ProjectsComponents/CreateProject */ "./resources/js/components/ProjectsComponents/CreateProject.js");
+/* harmony import */ var _ProjectsComponents_EditProject__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ProjectsComponents/EditProject */ "./resources/js/components/ProjectsComponents/EditProject.js");
+/* harmony import */ var _ProjectsComponents_CreateBug__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ProjectsComponents/CreateBug */ "./resources/js/components/ProjectsComponents/CreateBug.js");
+/* harmony import */ var _ProjectsComponents_EditBug__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ProjectsComponents/EditBug */ "./resources/js/components/ProjectsComponents/EditBug.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./style.scss */ "./resources/js/components/style.scss");
+
+
 
 
 
@@ -2024,33 +2028,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.BrowserRouter, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.BrowserRouter, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "App",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Switch, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Sidebar__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Navbar__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Switch, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/",
           exact: true,
           component: _AppComponents_Charts__WEBPACK_IMPORTED_MODULE_6__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/projects",
           exact: true,
           component: _AppComponents_Projects__WEBPACK_IMPORTED_MODULE_7__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+          path: "/projects/create",
+          exact: true,
+          component: _ProjectsComponents_CreateProject__WEBPACK_IMPORTED_MODULE_11__.default
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+          path: "/projects/:id/edit",
+          exact: true,
+          component: _ProjectsComponents_EditProject__WEBPACK_IMPORTED_MODULE_12__.default
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/projects/:id/create",
           exact: true,
-          component: _ProjectsComponents_CreateBug__WEBPACK_IMPORTED_MODULE_11__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+          component: _ProjectsComponents_CreateBug__WEBPACK_IMPORTED_MODULE_13__.default
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/projects/:id/:bugId/edit",
           exact: true,
-          component: _ProjectsComponents_EditBug__WEBPACK_IMPORTED_MODULE_12__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+          component: _ProjectsComponents_EditBug__WEBPACK_IMPORTED_MODULE_14__.default
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/projects/:id",
           component: _ProjectsComponents_Project__WEBPACK_IMPORTED_MODULE_10__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/log",
           component: _AppComponents_Log__WEBPACK_IMPORTED_MODULE_8__.default
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
           path: "/team",
           component: _AppComponents_Team__WEBPACK_IMPORTED_MODULE_9__.default
         })]
@@ -2172,7 +2184,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _ProjectsComponents_RemoveProject__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ProjectsComponents/RemoveProject */ "./resources/js/components/ProjectsComponents/RemoveProject.js");
 
 
 
@@ -2187,6 +2200,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -2231,32 +2245,53 @@ var Projects = function Projects() {
   } else {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "Projects",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
-        children: "Click on a projects title to enter the project"
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "projectsHeader",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+          className: "header",
+          children: "Click on a projects title to enter the project"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "addProject",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+            to: "/projects/create",
+            children: "ADD PROJECT"
+          })
+        })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("ul", {
         children: projects.map(function (project) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "project",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                  className: "projectTitle",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-                    to: "projects/".concat(project.id),
-                    children: ["Title: ", project.title]
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+              className: "projectProperties",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                    className: "projectTitle",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+                      to: "projects/".concat(project.id),
+                      children: ["Title: ", project.title]
+                    })
                   })
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                  children: ["Description: ", project.description]
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                  className: "bugs",
-                  children: ["Bugs: ", project.bugs.length]
-                })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    children: ["Description:", " ", project.description]
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    className: "bugs",
+                    children: ["Bugs: ", project.bugs.length]
+                  })
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              className: "projectCRUD",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_ProjectsComponents_RemoveProject__WEBPACK_IMPORTED_MODULE_2__.default, {
+                project: project
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+                to: "projects/".concat(project.id, "/edit"),
+                children: "Edit"
               })]
-            })
+            })]
           });
         })
       })]
@@ -2743,8 +2778,6 @@ var CreateBug = function CreateBug() {
       className: "createBugHeader",
       children: "Add new bug at project: "
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-      // method="POST"
-      // action={`/api/bugs`}
       className: "addBugForm",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
         children: ["Title:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
@@ -2780,6 +2813,116 @@ var CreateBug = function CreateBug() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateBug);
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectsComponents/CreateProject.js":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/ProjectsComponents/CreateProject.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var CreateProject = function CreateProject() {
+  var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useHistory)();
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      title = _useState2[0],
+      setTitle = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      description = _useState4[0],
+      setDescription = _useState4[1];
+
+  var id = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)()["id"];
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://127.0.0.1:8001/api/projects", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: title,
+        description: description
+      })
+    }).then(function (res) {
+      return console.log(res);
+    }).then(function (result) {
+      console.log(result);
+      history.push("/projects");
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    className: "CreateBug",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+      className: "createBugHeader",
+      children: "Add new project: "
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+      className: "addBugForm",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        children: ["Title:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "addInputs",
+          type: "text",
+          name: "title",
+          id: "addProjectTitle",
+          value: title,
+          onChange: function onChange(e) {
+            return setTitle(e.target.value);
+          }
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        htmlFor: "",
+        children: ["Description:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("textarea", {
+          className: "addInputs",
+          name: "description",
+          id: "addProjectDescription",
+          cols: "30",
+          rows: "3",
+          value: description,
+          onChange: function onChange(e) {
+            return setDescription(e.target.value);
+          }
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        type: "button",
+        onClick: handleSubmit,
+        children: "Add"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateProject);
 
 /***/ }),
 
@@ -2940,6 +3083,160 @@ var EditBug = function EditBug() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditBug);
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectsComponents/EditProject.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/ProjectsComponents/EditProject.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var EditProject = function EditProject() {
+  var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useHistory)();
+  var id = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)()["id"];
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null),
+      _useState2 = _slicedToArray(_useState, 2),
+      error = _useState2[0],
+      setError = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isLoading = _useState4[0],
+      setIsLoading = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({}),
+      _useState6 = _slicedToArray(_useState5, 2),
+      project = _useState6[0],
+      setProject = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      title = _useState8[0],
+      setTitle = _useState8[1];
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState10 = _slicedToArray(_useState9, 2),
+      description = _useState10[0],
+      setDescription = _useState10[1];
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://127.0.0.1:8001/api/projects/".concat(id), {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        id: project.id,
+        title: title,
+        description: description // created_at: bug.created_at,
+        // updated_at: bug.updated_at
+
+      })
+    }).then(function (res) {
+      return res.json();
+    }).then(function (result) {
+      setProject(result);
+      setIsLoading(false);
+      history.push("/projects");
+    }), function (error) {
+      setError(error);
+      setIsLoading(false);
+    };
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch("http://127.0.0.1:8001/api/projects/".concat(id)).then(function (res) {
+      return res.json();
+    }).then(function (result) {
+      console.log(result);
+      setProject(result);
+      setTitle(result.title);
+      setDescription(result.description);
+      setIsLoading(false);
+    }), function (error) {
+      setError(error);
+      setIsLoading(false);
+    };
+  }, []);
+
+  if (error) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      children: ["Error: ", error]
+    });
+  } else if (isLoading) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      children: "Loading..."
+    });
+  } else return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    className: "CreateBug",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+      className: "createBugHeader",
+      children: "Edit bug"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
+      className: "addBugForm",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        children: ["Title:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("input", {
+          className: "addInputs",
+          type: "text",
+          name: "title",
+          id: "addBugTitle",
+          value: title,
+          onChange: function onChange(e) {
+            return setTitle(e.target.value);
+          }
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("label", {
+        htmlFor: "",
+        children: ["Description:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("textarea", {
+          className: "addInputs",
+          name: "description",
+          id: "addBugDescription",
+          cols: "30",
+          rows: "3",
+          value: description,
+          onChange: function onChange(e) {
+            return setDescription(e.target.value);
+          }
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+        type: "button",
+        onClick: handleSubmit,
+        children: "Edit"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditProject);
 
 /***/ }),
 
@@ -3148,6 +3445,7 @@ var Remove = function Remove(props) {
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
     children: showRemove ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+      className: "removeButton",
       type: "button",
       onClick: handleClick,
       children: "delete"
@@ -3155,15 +3453,15 @@ var Remove = function Remove(props) {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "confirmButtonsBg",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-          children: "Are you sure?"
+          children: "Are you sure you want to delete this?"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
           className: "confirmButtons yesBtn",
           onClick: handleRemove,
-          children: "yes"
+          children: "YES"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
           className: "confirmButtons",
           onClick: handleClick,
-          children: "no"
+          children: "NO"
         })]
       })
     })
@@ -3171,6 +3469,97 @@ var Remove = function Remove(props) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Remove);
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectsComponents/RemoveProject.js":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/ProjectsComponents/RemoveProject.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+
+
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var RemoveProject = function RemoveProject(_ref) {
+  var project = _ref.project;
+  var history = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useHistory)();
+  var id = project.id;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true),
+      _useState2 = _slicedToArray(_useState, 2),
+      show = _useState2[0],
+      setShow = _useState2[1];
+
+  var handleClick = function handleClick(e) {
+    e.preventDefault();
+    console.log(id);
+    setShow(!show);
+  };
+
+  var handleRemove = function handleRemove(e) {
+    e.preventDefault();
+    fetch("http://127.0.0.1:8001/api/projects/".concat(id), {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(function (res) {
+      return res.json();
+    }).then(function (response) {
+      console.log(response);
+      history.push('/');
+      history.replace('/projects');
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    children: show ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+      onClick: handleClick,
+      children: "DELETE"
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "confirmButtonsBg",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+          children: "Are you sure you want to delete this?"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+          className: "confirmButtons yesBtn",
+          onClick: handleRemove,
+          children: "YES"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+          className: "confirmButtons",
+          onClick: handleClick,
+          children: "NO"
+        })]
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RemoveProject);
 
 /***/ }),
 
@@ -23851,7 +24240,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  background-color: #12232E;\n  box-sizing: border-box;\n  color: #EEFBFB;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\n*::-moz-selection {\n  color: #eb920d;\n}\n\n*::selection {\n  color: #eb920d;\n}\n\n.borders {\n  border: 1px solid #EEFBFB;\n}\n\n.App {\n  background-color: #12232E;\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #EEFBFB;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #12232E;\n  border: 1px solid #EEFBFB;\n  border-left: none;\n  color: #EEFBFB;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color, 0.1s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #007CC7;\n  color: #EEFBFB;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n\n.logo {\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n\n.navbarRight {\n  border-bottom: 1px solid #EEFBFB;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n\n.Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.Dropdown {\n  grid-column: 3/4;\n  grid-row: 1/2;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #EEFBFB;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #12232E;\n}\n\nul {\n  list-style: none;\n}\n\n.Projects h1 {\n  margin: 1rem 2rem;\n}\n.Projects .project {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  margin: 2rem;\n  transition: box-shadow, transform, 0.2s;\n}\n.Projects .project p {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.25rem;\n}\n.Projects .project .projectTitle {\n  background-color: #007CC7;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectTitle a {\n  background-color: #007CC7;\n  color: #EEFBFB;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectTitle:hover {\n  background-color: #12232E;\n}\n.Projects .project .projectTitle:hover a {\n  background-color: #12232E;\n  color: #EEFBFB;\n}\n.Projects .project .bugs {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 700;\n}\n.Projects .project:hover {\n  transform: translateX(1%) translateY(1%);\n  box-shadow: none;\n}\n\n.projectShow {\n  border: 3px solid #EEFBFB;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectHeader .addBug a {\n  border: 5px solid #007CC7;\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  font-weight: 700;\n  padding: 15px 25px;\n  text-decoration: none;\n  transition: box-shadow, background-color, color, transform, 0.2s;\n}\n.projectShow .projectHeader .addBug a:hover {\n  box-shadow: none;\n  background-color: #007CC7;\n  color: #EEFBFB;\n  transform: translateX(10%) translateY(10%);\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  border: 5px solid #007CC7;\n  color: #12232E;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsProperties h4 {\n  background-color: #007CC7;\n  color: #EEFBFB;\n  padding: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties div {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: #4DA8DA;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs .bug .bugsCrud button {\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  background-color: #EEFBFB;\n  padding: 0.5rem 1rem;\n  border: none;\n  color: #12232E;\n  transition: border, transform, 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud p {\n  color: #12232E;\n  font-weight: 600;\n  text-align: center;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg {\n  background-color: #4DA8DA;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg p {\n  background-color: #4DA8DA;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg .confirmButtons {\n  margin: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg .yesBtn {\n  background-color: #b91e1e;\n}\n.projectShow .projectsBugs .bug .bugsCrud button:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n.projectShow .projectsBugs .bug .bugsCrud a {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  text-decoration: none;\n  transition: border, transform, 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud a:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n\n.CreateBug {\n  border: 3px solid #EEFBFB;\n  display: flex;\n  flex-direction: column;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n}\n.CreateBug .createBugHeader {\n  margin-bottom: 2rem;\n}\n.CreateBug .addBugForm {\n  display: flex;\n  flex-direction: column;\n}\n.CreateBug .addBugForm .addInputs {\n  margin-bottom: 2rem;\n  width: 100%;\n}\n.CreateBug .addBugForm button {\n  align-self: flex-end;\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 5px 5px #007CC7;\n  color: #007CC7;\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  margin-right: 1rem;\n  padding: 0.5rem 1rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n.CreateBug .addBugForm button:hover {\n  box-shadow: none;\n  transform: translateX(10%) translateY(10%);\n}\n\nlabel {\n  font-weight: 700;\n}\n\ninput {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n\ninput:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}\n\ntextarea {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n\ntextarea:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}\n\n@media screen and (max-width: 768px) {\n  .App {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    justify-content: center;\n    text-align: center;\n    margin: 0;\n    padding: 0;\n  }\n  .App .Sidebar {\n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  .App .Charts {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .bug {\n    flex-direction: column;\n  }\n  .bug .bugsProperties {\n    width: 100% !important;\n  }\n  .bug .bugsCrud {\n    background-color: #007CC7 !important;\n    justify-content: space-around;\n    align-items: center;\n    width: 100% !important;\n  }\n  .bug .bugsCrud button {\n    font-family: inherit;\n    font-size: 100%;\n    font-weight: 600;\n    background-color: #EEFBFB;\n    padding: 0.5rem 1rem;\n    border: none;\n    color: #12232E;\n    transition: border, transform, 0.1s;\n  }\n  .bug .bugsCrud p {\n    color: #12232E;\n    font-weight: 600;\n    text-align: center;\n  }\n  .bug .bugsCrud .confirmButtonsBg {\n    background-color: #4DA8DA;\n  }\n  .bug .bugsCrud .confirmButtonsBg p {\n    background-color: #4DA8DA;\n  }\n  .bug .bugsCrud .confirmButtonsBg .confirmButtons {\n    margin: 0.5rem;\n  }\n  .bug .bugsCrud .confirmButtonsBg .yesBtn {\n    background-color: #b91e1e;\n  }\n  .bug .bugsCrud button:hover {\n    border: 3px solid #12232E;\n    transform: scale(0.95);\n  }\n  .bug .bugsCrud a {\n    background-color: #EEFBFB;\n    color: #12232E;\n    font-weight: 600;\n    padding: 0.5rem 1rem;\n    text-decoration: none;\n    transition: border, transform, 0.1s;\n  }\n  .bug .bugsCrud a:hover {\n    border: 3px solid #12232E;\n    transform: scale(0.95);\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  background-color: #12232E;\n  box-sizing: border-box;\n  color: #EEFBFB;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif;\n  margin: 0;\n  outline: none;\n  padding: 0;\n}\n\n*:hover {\n  outline: none;\n}\n\n*::-moz-selection {\n  color: #eb920d;\n}\n\n*::selection {\n  color: #eb920d;\n}\n\nul {\n  list-style: none;\n}\n\nlabel {\n  font-weight: 700;\n}\n\ninput {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n\ninput:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}\n\ntextarea {\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  font-size: 1rem;\n  font-weight: 600;\n  padding: 0.5rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n\ntextarea:focus {\n  box-shadow: none;\n  transform: translateX(1%) translateY(1%);\n}\n\n.borders {\n  border: 1px solid #EEFBFB;\n}\n\n.App {\n  background-color: #12232E;\n  height: 100vh;\n  display: grid;\n  grid-template-columns: 1fr 10fr;\n  grid-template-rows: 4fr 24fr 1fr;\n}\n\n.Sidebar {\n  padding-right: 1rem;\n  border-right: 1px solid #EEFBFB;\n  grid-column: 1/2;\n  grid-row: 2/3;\n}\n.Sidebar a {\n  background-color: #12232E;\n  border: 1px solid #EEFBFB;\n  border-left: none;\n  color: #EEFBFB;\n  display: block;\n  font-weight: 700;\n  padding: 1.5rem 0rem 1.5rem 0.5rem;\n  text-decoration: none;\n  transition: background-color, color, 0.1s;\n  width: 100%;\n}\n.Sidebar a:hover {\n  background-color: #007CC7;\n  color: #EEFBFB;\n}\n\n.Navbar {\n  display: flex;\n  align-items: baseline;\n  grid-column: 1/3;\n  grid-row: 1/2;\n}\n.Navbar .logo {\n  padding-left: 23px;\n  padding-right: 23px;\n  height: 70px;\n}\n.Navbar .navbarRight {\n  border-bottom: 1px solid #EEFBFB;\n  display: flex;\n  width: 100%;\n  justify-content: flex-end;\n}\n.Navbar .Search {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.Navbar .Notifications {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n.Navbar .User {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.Charts {\n  grid-column: 2/3;\n  grid-row: 2/3;\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr 3fr 1fr;\n  grid-template-rows: 1fr 4fr 1fr;\n}\n\n.DoughnutChart {\n  grid-column: 2/3;\n  grid-row: 2/3;\n}\n\n.BarChart {\n  grid-column: 4/5;\n  grid-row: 2/3;\n}\n\n.Footer {\n  background-color: #EEFBFB;\n  grid-column: 1/3;\n  grid-row: 3/4;\n  text-align: center;\n  color: #12232E;\n}\n\n.Projects h1 {\n  margin: 1rem 2rem;\n}\n.Projects .projectsHeader {\n  display: flex;\n}\n.Projects .projectsHeader .header {\n  width: 75%;\n}\n.Projects .projectsHeader .addProject {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.Projects .projectsHeader .addProject a {\n  border: 5px solid #007CC7;\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  font-weight: 700;\n  padding: 15px 25px;\n  text-decoration: none;\n  transition: box-shadow, background-color, color, transform, 0.2s;\n}\n.Projects .projectsHeader .addProject a:hover {\n  box-shadow: none;\n  background-color: #007CC7;\n  color: #EEFBFB;\n  transform: translateX(10%) translateY(10%);\n}\n.Projects .project {\n  display: flex;\n  margin: 1rem 2.5rem;\n  box-shadow: 10px 10px #007CC7;\n  transition: box-shadow, transform, 0.2s;\n}\n.Projects .project .projectProperties {\n  background-color: #007CC7;\n  border: 5px solid #007CC7;\n  color: #007CC7;\n  width: 75%;\n}\n.Projects .project .projectProperties p {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.25rem;\n}\n.Projects .project .projectProperties .projectTitle {\n  background-color: #007CC7;\n  padding: 0.25rem 0;\n}\n.Projects .project .projectProperties .projectTitle a {\n  background-color: #007CC7;\n  color: #EEFBFB;\n  font-weight: 700;\n  padding: 0.25rem;\n  text-decoration: none;\n}\n.Projects .project .projectProperties .projectTitle:hover {\n  background-color: #12232E;\n}\n.Projects .project .projectProperties .projectTitle:hover a {\n  background-color: #12232E;\n  color: #EEFBFB;\n}\n.Projects .project .projectProperties .projectTitle:hover a:hover {\n  color: #eb920d;\n}\n.Projects .project .projectProperties .bugs {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 700;\n}\n.Projects .project .projectCRUD {\n  background-color: #4DA8DA;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  width: 25%;\n}\n.Projects .project .projectCRUD button {\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  background-color: #eb920d;\n  padding: 0.5rem 1rem;\n  border: none;\n  color: #12232E;\n  transition: border, transform, 0.1s;\n}\n.Projects .project .projectCRUD p {\n  color: #12232E;\n  font-weight: 600;\n  text-align: center;\n}\n.Projects .project .projectCRUD .confirmButtonsBg {\n  background-color: #4DA8DA;\n  text-align: center;\n}\n.Projects .project .projectCRUD .confirmButtonsBg p {\n  background-color: #4DA8DA;\n}\n.Projects .project .projectCRUD .confirmButtonsBg .confirmButtons {\n  background-color: #EEFBFB;\n  margin: 0.5rem;\n}\n.Projects .project .projectCRUD .confirmButtonsBg .yesBtn {\n  background-color: red;\n  color: #EEFBFB;\n  font-weight: 600;\n}\n.Projects .project .projectCRUD button:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n.Projects .project .projectCRUD a {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  text-decoration: none;\n  transition: border, transform, 0.1s;\n}\n.Projects .project .projectCRUD a:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n.Projects .project:hover {\n  transform: translateX(1%) translateY(1%);\n  box-shadow: none;\n}\n\n.projectShow {\n  border: 3px solid #EEFBFB;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n  overflow-y: scroll;\n}\n.projectShow .projectHeader {\n  display: flex;\n}\n.projectShow .projectHeader .headers {\n  width: 75%;\n}\n.projectShow .projectHeader .addBug {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectHeader .addBug a {\n  border: 5px solid #007CC7;\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #007CC7;\n  font-weight: 700;\n  padding: 15px 25px;\n  text-decoration: none;\n  transition: box-shadow, background-color, color, transform, 0.2s;\n}\n.projectShow .projectHeader .addBug a:hover {\n  box-shadow: none;\n  background-color: #007CC7;\n  color: #EEFBFB;\n  transform: translateX(10%) translateY(10%);\n}\n.projectShow .projectsBugs {\n  margin-top: 1.5rem;\n}\n.projectShow .projectsBugs .bug {\n  background-color: #EEFBFB;\n  box-shadow: 10px 10px #007CC7;\n  color: #12232E;\n  display: flex;\n  margin-bottom: 1rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties {\n  background-color: #007CC7;\n  border: 5px solid #007CC7;\n  color: #12232E;\n  width: 75%;\n}\n.projectShow .projectsBugs .bug .bugsProperties h4 {\n  background-color: #007CC7;\n  color: #EEFBFB;\n  padding: 0.25rem;\n}\n.projectShow .projectsBugs .bug .bugsProperties div {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud {\n  background-color: #4DA8DA;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-around;\n  align-items: center;\n  width: 25%;\n}\n.projectShow .projectsBugs .bug .bugsCrud .removeButton {\n  background-color: #eb920d !important;\n}\n.projectShow .projectsBugs .bug .bugsCrud button {\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  background-color: #EEFBFB;\n  padding: 0.5rem 1rem;\n  border: none;\n  color: #12232E;\n  transition: border, transform, 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud p {\n  color: #12232E;\n  font-weight: 600;\n  text-align: center;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg {\n  background-color: #4DA8DA;\n  text-align: center;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg p {\n  background-color: #4DA8DA;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg .confirmButtons {\n  background-color: #EEFBFB;\n  margin: 0.5rem;\n}\n.projectShow .projectsBugs .bug .bugsCrud .confirmButtonsBg .yesBtn {\n  background-color: red;\n  color: #EEFBFB;\n  font-weight: 600;\n}\n.projectShow .projectsBugs .bug .bugsCrud button:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n.projectShow .projectsBugs .bug .bugsCrud a {\n  background-color: #EEFBFB;\n  color: #12232E;\n  font-weight: 600;\n  padding: 0.5rem 1rem;\n  text-decoration: none;\n  transition: border, transform, 0.1s;\n}\n.projectShow .projectsBugs .bug .bugsCrud a:hover {\n  border: 3px solid #12232E;\n  transform: scale(0.95);\n}\n\n.CreateBug {\n  border: 3px solid #EEFBFB;\n  display: flex;\n  flex-direction: column;\n  margin: 0 1rem 1rem 1rem;\n  padding: 1.5rem;\n}\n.CreateBug .createBugHeader {\n  margin-bottom: 2rem;\n}\n.CreateBug .addBugForm {\n  display: flex;\n  flex-direction: column;\n}\n.CreateBug .addBugForm .addInputs {\n  margin-bottom: 2rem;\n  width: 100%;\n}\n.CreateBug .addBugForm button {\n  align-self: flex-end;\n  background-color: #EEFBFB;\n  border: 5px solid #007CC7;\n  box-shadow: 5px 5px #007CC7;\n  color: #007CC7;\n  font-family: inherit;\n  font-size: 100%;\n  font-weight: 600;\n  margin-right: 1rem;\n  padding: 0.5rem 1rem;\n  transition: box-shadow, transorm, 0.2s;\n}\n.CreateBug .addBugForm button:hover {\n  box-shadow: none;\n  transform: translateX(10%) translateY(10%);\n}\n\n@media screen and (max-width: 768px) {\n  .App {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    justify-content: center;\n    text-align: center;\n    margin: 0;\n    padding: 0;\n  }\n  .App .Sidebar {\n    width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n  .App .Charts {\n    display: flex;\n    flex-direction: column;\n  }\n\n  .bug {\n    flex-direction: column;\n  }\n  .bug .bugsProperties {\n    width: 100% !important;\n  }\n  .bug .bugsCrud {\n    background-color: #007CC7 !important;\n    width: 100% !important;\n  }\n  .bug .bugsCrud button {\n    font-family: inherit;\n    font-size: 100%;\n    font-weight: 600;\n    background-color: #EEFBFB;\n    padding: 0.5rem 1rem;\n    border: none;\n    color: #12232E;\n    transition: border, transform, 0.1s;\n  }\n  .bug .bugsCrud p {\n    color: #12232E;\n    font-weight: 600;\n    text-align: center;\n  }\n  .bug .bugsCrud .confirmButtonsBg {\n    background-color: #007CC7 !important;\n  }\n  .bug .bugsCrud .confirmButtonsBg p {\n    background-color: #007CC7 !important;\n    color: #EEFBFB !important;\n  }\n  .bug .bugsCrud .confirmButtonsBg .confirmButtons {\n    margin: 0.5rem;\n  }\n  .bug .bugsCrud .confirmButtonsBg .yesBtn {\n    background-color: #b91e1e;\n  }\n  .bug .bugsCrud button:hover {\n    border: 3px solid #12232E;\n    transform: scale(0.95);\n  }\n  .bug .bugsCrud a {\n    background-color: #EEFBFB;\n    color: #12232E;\n    font-weight: 600;\n    padding: 0.5rem 1rem;\n    text-decoration: none;\n    transition: border, transform, 0.1s;\n  }\n  .bug .bugsCrud a:hover {\n    border: 3px solid #12232E;\n    transform: scale(0.95);\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

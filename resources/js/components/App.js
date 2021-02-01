@@ -11,6 +11,8 @@ import Log from "./AppComponents/Log";
 import Team from "./AppComponents/Team";
 
 import Project from './ProjectsComponents/Project';
+import CreateProject from './ProjectsComponents/CreateProject';
+import EditProject from './ProjectsComponents/EditProject';
 import CreateBug from './ProjectsComponents/CreateBug';
 import EditBug from './ProjectsComponents/EditBug';
 
@@ -28,6 +30,8 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={Charts} />
                     <Route path="/projects" exact component={Projects} />
+                    <Route path="/projects/create" exact component={CreateProject} />
+                    <Route path="/projects/:id/edit" exact component={EditProject} />
                     <Route
                         path="/projects/:id/create"
                         exact

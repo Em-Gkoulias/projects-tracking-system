@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 const EditBug = () => {
-    let history = useHistory();
+    const history = useHistory();
 
     const bugId = useParams()["bugId"];
     const id = useParams()["id"];

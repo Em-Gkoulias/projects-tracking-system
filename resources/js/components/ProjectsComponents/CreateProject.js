@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
-const CreateBug = () => {
+const CreateProject = () => {
     let history = useHistory();
 
     const [title, setTitle] = useState("");
@@ -11,13 +11,12 @@ const CreateBug = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch(`http://127.0.0.1:8001/api/bugs`, {
+        fetch(`http://127.0.0.1:8001/api/projects`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                project_id: id,
                 title: title,
                 description: description,
             }),
@@ -25,23 +24,21 @@ const CreateBug = () => {
             .then((res) => console.log(res))
             .then((result) => {
                 console.log(result);
-                history.push(`/projects/${id}`); 
-            })
-    }
+                history.push(`/projects`);
+            });
+    };
 
     return (
         <div className="CreateBug">
-            <h1 className="createBugHeader">Add new bug at project: </h1>
-            <form
-                className="addBugForm"
-            >
+            <h1 className="createBugHeader">Add new project: </h1>
+            <form className="addBugForm">
                 <label>
                     Title:
                     <input
                         className="addInputs"
                         type="text"
                         name="title"
-                        id="addBugTitle"
+                        id="addProjectTitle"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                     />
@@ -51,7 +48,7 @@ const CreateBug = () => {
                     <textarea
                         className="addInputs"
                         name="description"
-                        id="addBugDescription"
+                        id="addProjectDescription"
                         cols="30"
                         rows="3"
                         value={description}
@@ -59,10 +56,12 @@ const CreateBug = () => {
                     ></textarea>
                 </label>
 
-                <button type="button" onClick={handleSubmit}>Add</button>
+                <button type="button" onClick={handleSubmit}>
+                    Add
+                </button>
             </form>
         </div>
     );
 };
 
-export default CreateBug;
+export default CreateProject;
