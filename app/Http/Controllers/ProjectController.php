@@ -12,6 +12,7 @@ class ProjectController extends Controller
 {
 
     public function index() {
+
         $projects = Project::with('bugs')->get();
 
         return response()->json($projects);
@@ -37,6 +38,7 @@ class ProjectController extends Controller
     }
 
     public function show($id) {
+
         $project = Project::findOrFail($id);
         $project->bugs;
 
@@ -44,6 +46,7 @@ class ProjectController extends Controller
     }
 
     public function update(Request $request, $id) {
+
         $request->validate([
             'title' => ['required'],
             'description' => ['required']
@@ -59,6 +62,7 @@ class ProjectController extends Controller
     }
 
     public function destroy($id) {
+        
         $project = Project::findOrFail($id);
         $project->delete();
 

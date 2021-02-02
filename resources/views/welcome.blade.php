@@ -6,7 +6,7 @@
         
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link href="{{ asset('sass/style.scss') }}" rel="stylesheet">
+        {{-- <link href="{{ asset('sass/style.scss') }}" rel="stylesheet"> --}}
 
         <title>Laravel</title>
 

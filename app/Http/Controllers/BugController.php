@@ -9,6 +9,7 @@ class BugController extends Controller
 {
 
     public function index() {
+
         $bugs = Bug::all();
         return response()->json($bugs);
     }
@@ -55,11 +56,7 @@ class BugController extends Controller
         ]);
     }
 
-    public function destroy(Request $request, $id) {
-
-        // $request->validate([
-
-        // ]);
+    public function destroy($id) {
 
         $bug = Bug::findOrFail($id);
         $bug->delete();
