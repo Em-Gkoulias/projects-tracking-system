@@ -23,6 +23,7 @@ class BugController extends Controller
     public function store(Request $request) {
 
         $request->validate([
+            'project_id' => ['required'],
             'title' => ['required'],
             'description' => ['required']
         ]);
@@ -43,6 +44,7 @@ class BugController extends Controller
     public function update(Request $request, $id) {
 
         $request->validate([
+            'project_id' => ['required'],
             'title' => ['required'],
             'description' => ['required']
         ]);

@@ -41,7 +41,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function projects() {
-        return $this->hasMany(Project::class);
+    public function profile() 
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::created(function($user) {
+            $user->profile()->create([
+                'user_id' => $user->id,
+                'name' => $user->name
+            ]);
+        });
     }
 }

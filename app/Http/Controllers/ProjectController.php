@@ -21,11 +21,13 @@ class ProjectController extends Controller
     public function store(Request $request) {
 
         $request->validate([
+            'profile_id' => ['required'],
             'title' => ['required'],
             'description' => ['required']
         ]);
 
         $project = new Project([
+            'profile_id' => $request->profile_id,
             'title' => $request->title,
             'description' => $request->description
         ]);
